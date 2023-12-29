@@ -786,8 +786,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.02795, y: -0.010749996, z: 0}
-    m_Extent: {x: 2.44645, y: 0.81685, z: 0}
+    m_Center: {x: -1.0253501, y: -0.010500014, z: 0}
+    m_Extent: {x: 2.44855, y: 0.8211, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -858,8 +858,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.01875, y: -0.0045000017, z: 0}
-    m_Extent: {x: 2.44435, y: 0.8138, z: 0}
+    m_Center: {x: -1.02105, y: -0.007099986, z: 0}
+    m_Extent: {x: 2.44455, y: 0.8207, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1553,8 +1553,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.02835, y: -0.0131500065, z: 0}
-    m_Extent: {x: 2.44165, y: 0.82225, z: 0}
+    m_Center: {x: -1.01985, y: -0.009599984, z: 0}
+    m_Extent: {x: 2.44695, y: 0.8182, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1710,8 +1710,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.02555, y: -0.008650005, z: 0}
-    m_Extent: {x: 2.45395, y: 0.82535, z: 0}
+    m_Center: {x: -1.0239, y: -0.01214999, z: 0}
+    m_Extent: {x: 2.4396, y: 0.81575, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2092,8 +2092,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.7668, y: -0.13770002, z: 0}
-    m_Extent: {x: 0.8265, y: 1.8034999, z: 0}
+    m_Center: {x: -0.76694995, y: -0.13919997, z: 0}
+    m_Extent: {x: 0.82825, y: 1.8074, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

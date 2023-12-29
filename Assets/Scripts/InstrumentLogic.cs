@@ -7,7 +7,10 @@ public class InstrumentLogic : MonoBehaviour
 {
     public static Action<GameObject> onInstrument;
     public Color intrumentUIColor;
-    public GameObject light;
+    public GameObject lightPrincipal;
+    
+    
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Player")) {
@@ -19,6 +22,8 @@ public class InstrumentLogic : MonoBehaviour
 
     private void ActivateLight()
     {
-        light.active = true;
+        lightPrincipal.active = true;
+        gameObject.GetComponent<SpriteRenderer>().color=Color.white;
+       
     }
 }
