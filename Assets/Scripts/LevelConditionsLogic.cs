@@ -66,22 +66,18 @@ public class LevelConditionsLogic : MonoBehaviour
 
     private void Windy()
     {
-        Debug.Log("Windy Action");
     }
 
     private void Sound()
     {
-        Debug.Log("Sound Action");
     }
 
     private void Magnetism()
     {
-        Debug.Log("Magnetism Action");
     }
 
     private void Electricity()
     {
-        Debug.Log("Electricity Action");
     }
 
 
