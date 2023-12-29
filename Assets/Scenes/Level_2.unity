@@ -366,7 +366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8499048855335075062, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: gravityScale
-      value: 16
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -786,8 +786,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.0253501, y: -0.010500014, z: 0}
-    m_Extent: {x: 2.44855, y: 0.8211, z: 0}
+    m_Center: {x: -1.02705, y: -0.0072999895, z: 0}
+    m_Extent: {x: 2.44955, y: 0.82809997, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -858,8 +858,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.02105, y: -0.007099986, z: 0}
-    m_Extent: {x: 2.44455, y: 0.8207, z: 0}
+    m_Center: {x: -1.02415, y: -0.007950008, z: 0}
+    m_Extent: {x: 2.45255, y: 0.82145, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1149,6 +1149,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_Color.b
+      value: 0.40392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_Color.r
+      value: 0.43137255
+      objectReference: {fileID: 0}
     - target: {fileID: 5178505308039342221, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Name
       value: Instrumento (2)
@@ -1553,8 +1565,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.01985, y: -0.009599984, z: 0}
-    m_Extent: {x: 2.44695, y: 0.8182, z: 0}
+    m_Center: {x: -1.02575, y: -0.010199994, z: 0}
+    m_Extent: {x: 2.45045, y: 0.8241, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1710,8 +1722,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.0239, y: -0.01214999, z: 0}
-    m_Extent: {x: 2.4396, y: 0.81575, z: 0}
+    m_Center: {x: -1.0258, y: -0.011449993, z: 0}
+    m_Extent: {x: 2.4467, y: 0.81605, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1819,6 +1831,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_Color.b
+      value: 0.40392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_Color.r
+      value: 0.43137255
+      objectReference: {fileID: 0}
     - target: {fileID: 5178505308039342221, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Name
       value: Instrumento (1)
@@ -1929,6 +1953,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_Color.b
+      value: 0.4009434
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_Color.r
+      value: 0.43063483
+      objectReference: {fileID: 0}
     - target: {fileID: 5178505308039342221, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Name
       value: Instrumento
@@ -2092,8 +2128,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.76694995, y: -0.13919997, z: 0}
-    m_Extent: {x: 0.82825, y: 1.8074, z: 0}
+    m_Center: {x: -0.76935, y: -0.13434994, z: 0}
+    m_Extent: {x: 0.82835, y: 1.80855, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
