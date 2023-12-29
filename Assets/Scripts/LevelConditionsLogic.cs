@@ -44,47 +44,64 @@ public class LevelConditionsLogic : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        Gravity();
+        Windy();
+        Sound();
+        Magnetism();
+        Electricity();
+    }
+
     private void Gravity(){
-        if (G) {
-            touchingWall = !touchingWall;
+        if (G && !touchingWall) {
             Debug.LogWarning(touchingWall);
+
         }
     }
+
+   
 
     
 
     private void Windy()
     {
-        Debug.Log("Windy Action");
     }
 
     private void Sound()
     {
-        Debug.Log("Sound Action");
     }
 
     private void Magnetism()
     {
-        Debug.Log("Magnetism Action");
     }
 
     private void Electricity()
     {
-        Debug.Log("Electricity Action");
     }
 
+
+    private void SetTrue() 
+    {
+        touchingWall = true;
+    }
+
+    private void SetFalse()
+    {
+        touchingWall = false;
+    }
 
 
 
     private void OnEnable()
     {
-        BallMovement.onJump += Gravity;
-        BallMovement.onWall += Gravity;
+        BallMovement.onJump += SetFalse;
+        BallMovement.onWall += SetTrue;
     }
 
     private void OnDisable()
     {
-        BallMovement.onJump -= Gravity;
-        BallMovement.onWall -= Gravity;
+        BallMovement.onJump -= SetFalse;
+        BallMovement.onWall -= SetTrue;
     }
 }

@@ -300,6 +300,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instrumento
       objectReference: {fileID: 0}
+    - target: {fileID: 6545516081818103117, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545516081818103117, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7084425103105204063, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -443,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0650fb3cdbe354aaf89ce9c0433bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCondition: 0
+  levelCondition: 1
   totalJumps: 20
   nextLevelName: Level_4
   levelInstruments:
@@ -467,6 +475,14 @@ PrefabInstance:
     - target: {fileID: 5178505308039342221, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Name
       value: Instrumento (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545516081818103117, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545516081818103117, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7084425103105204063, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Sprite
@@ -739,6 +755,14 @@ PrefabInstance:
     - target: {fileID: 5178505308039342221, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Name
       value: Instrumento (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545516081818103117, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545516081818103117, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7084425103105204063, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Sprite
