@@ -16,6 +16,7 @@ public class BallMovement : MonoBehaviour
 
     public static Action onJump;
     public static Action onWall;
+    public static Action<GameObject> onElectricity;
 
     [Header("Other Components")]
     [SerializeField] private GameObject arrowPoint; //Referencia a la flecha de direccion
@@ -75,6 +76,7 @@ public class BallMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         onWall?.Invoke();
+        onElectricity?.Invoke(collision.gameObject);
 
         Debug.Log("Ball Colliding Wall"); //CHOQUEM AMB UNA PARET NORMAL
         touchingWall = true;
