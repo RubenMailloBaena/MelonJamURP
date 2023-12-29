@@ -13,7 +13,7 @@ public class LevelConditionsLogic : MonoBehaviour
     private GameController.LevelConditions levelCondition;
     private GameObject player;
 
-    private bool touchingWall = true;
+    public bool touchingWall = true;
 
     private void Start()
     {
@@ -60,12 +60,14 @@ public class LevelConditionsLogic : MonoBehaviour
     private void Gravity(){
         if (G && !touchingWall)
         {
-            player.GetComponent<BallMovement>().YSpeed -= gravityScale * Time.deltaTime;
+            //Debug.Log(player.GetComponent<BallMovement>().YSpeed);
+            player.GetComponent<BallMovement>().YSpeed -= (gravityScale * Time.deltaTime);
         }
     }
 
     private void Windy()
     {
+
     }
 
     private void Sound()
@@ -86,6 +88,10 @@ public class LevelConditionsLogic : MonoBehaviour
         touchingWall = true;
     }
 
+    private void SetRoofTrue() 
+    {
+    }
+
     private void SetFalse()
     {
         touchingWall = false;
@@ -97,11 +103,13 @@ public class LevelConditionsLogic : MonoBehaviour
     {
         PlayerInputs.selectDirection += SetFalse;
         BallMovement.onWall += SetTrue;
+        BallMovement.onRoof += SetRoofTrue;
     }
 
     private void OnDisable()
     {
         PlayerInputs.selectDirection -= SetFalse;
         BallMovement.onWall -= SetTrue;
+        BallMovement.onRoof -= SetRoofTrue;
     }
 }

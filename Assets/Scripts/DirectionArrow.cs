@@ -88,7 +88,7 @@ public class DirectionArrow : MonoBehaviour
     //Si choca con una pared, este cambia el sentido de la orbita
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Wall") || collision.gameObject.tag.Equals("MovingWall")) {
+        if (collision.gameObject.tag.Equals("Wall") || collision.gameObject.tag.Equals("MovingWall") || collision.gameObject.tag.Equals("Roof")) {
             rotationSpeed = rotationSpeed * -1;
             //isColliding = true;
         }
@@ -96,7 +96,7 @@ public class DirectionArrow : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Wall") || collision.gameObject.tag.Equals("MovingWall"))
+        if (collision.gameObject.tag.Equals("Wall") || collision.gameObject.tag.Equals("MovingWall") || collision.gameObject.tag.Equals("Roof"))
         {
             //isColliding = true;
         }
@@ -104,7 +104,7 @@ public class DirectionArrow : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("Wall") || collision.gameObject.tag.Equals("MovingWall"))
+        if (collision.gameObject.tag.Equals("Wall") || collision.gameObject.tag.Equals("MovingWall") || collision.gameObject.tag.Equals("Roof"))
         {
             isColliding = false;
         }

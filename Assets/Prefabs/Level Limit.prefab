@@ -113,6 +113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7802446142989157328, guid: 364b14851e584ff4088155b1a7b9c6f3, type: 3}
+      propertyPath: m_TagString
+      value: Roof
+      objectReference: {fileID: 0}
     - target: {fileID: 8086962957008656231, guid: 364b14851e584ff4088155b1a7b9c6f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4

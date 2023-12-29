@@ -16,6 +16,7 @@ public class BallMovement : MonoBehaviour
 
     public static Action onJump;
     public static Action onWall;
+    public static Action onRoof;
 
     [Header("Other Components")]
     [SerializeField] private GameObject arrowPoint; //Referencia a la flecha de direccion
@@ -36,7 +37,6 @@ public class BallMovement : MonoBehaviour
         {
             //MOVIMIENTO CON TRANSFORM
             transform.position += new Vector3(direction.x * (ballSpeed * Time.deltaTime), direction.y * YSpeed * Time.deltaTime, 0f);
-            Debug.Log(YSpeed);
             //MOVIMIENTO CON VELOCITY
             //rb.velocity = direction * ballSpeed * Time.deltaTime;
         }
@@ -84,6 +84,11 @@ public class BallMovement : MonoBehaviour
         {
             touchingMovingWall = true;
             transform.SetParent(collision.transform);
+        }
+
+        if (collision.gameObject.tag.Equals("Roof")) //CHOCAMOS CON EL TECHO
+        {
+            onRoof?.Invoke();
         }
     }
 
