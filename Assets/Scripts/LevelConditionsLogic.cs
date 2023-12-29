@@ -1,0 +1,90 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LevelConditionsLogic : MonoBehaviour
+{
+    private bool G = false, W = false, S = false, M = false, E = false;
+
+    private GameController.LevelConditions levelCondition;
+    private Rigidbody2D playerRB;
+
+    private bool touchingWall = true;
+
+    private void Start()
+    {
+        levelCondition = this.gameObject.GetComponent<GameController>().getLevelCondition();
+        playerRB = GameObject.Find("Ball").GetComponent<Rigidbody2D>();
+
+        switch (levelCondition)
+        {
+            case GameController.LevelConditions.Gravity:
+                G = true;
+                break;
+
+            case GameController.LevelConditions.Windy:
+                W = true;
+                break;
+
+            case GameController.LevelConditions.Sound:
+                S = true;
+                break;
+
+            case GameController.LevelConditions.Magnetism:
+                M = true;
+                break;
+
+            case GameController.LevelConditions.Electricity:
+                E = true;
+                break;
+
+            default:
+                //Case Nothing
+                break;
+        }
+    }
+
+    private void Gravity(){
+        if (G) {
+            touchingWall = !touchingWall;
+            Debug.LogWarning(touchingWall);
+        }
+    }
+
+    
+
+    private void Windy()
+    {
+        Debug.Log("Windy Action");
+    }
+
+    private void Sound()
+    {
+        Debug.Log("Sound Action");
+    }
+
+    private void Magnetism()
+    {
+        Debug.Log("Magnetism Action");
+    }
+
+    private void Electricity()
+    {
+        Debug.Log("Electricity Action");
+    }
+
+
+
+
+    private void OnEnable()
+    {
+        BallMovement.onJump += Gravity;
+        BallMovement.onWall += Gravity;
+    }
+
+    private void OnDisable()
+    {
+        BallMovement.onJump -= Gravity;
+        BallMovement.onWall -= Gravity;
+    }
+}
