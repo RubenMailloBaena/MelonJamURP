@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PowerUpsLogic : MonoBehaviour
 {
+    private BallMovement playerScript;
+
     [Header("Slow Time Power Up")]
     [SerializeField] private float SlowTimePowerUpUseTime = 5f;
     [SerializeField] private float SlowMotionValue = 0.6f;
@@ -17,6 +19,8 @@ public class PowerUpsLogic : MonoBehaviour
 
     private void Start()
     {
+        playerScript = GameObject.Find("Ball").GetComponent<BallMovement>();
+
         //SLOW TIME
         SlowTimeBar = GameObject.Find("SlowTimeBar").GetComponent<Image>();
         timeToUse = SlowTimePowerUpUseTime;
@@ -56,7 +60,14 @@ public class PowerUpsLogic : MonoBehaviour
 
     //CHANGE DIRECTION MID-AIR
     private void ChangeDirectionMidAir() {
-        Debug.Log("CHANGING DIRECTION");
+        Debug.Log("Doing Action");
+        playerScript.ChangeShowArrow(true);
+    }
+
+    private void StopChangeDirectionMidAir() {
+        Debug.Log("Stoppinn Action");
+        playerScript.GetDirectionVector();
+        playerScript.ChangeShowArrow(false);
     }
 
 
@@ -80,6 +91,7 @@ public class PowerUpsLogic : MonoBehaviour
         PlayerInputs.slowTime += SlowTime;
         PlayerInputs.stopSlowTime += StopSlowTime;
         PlayerInputs.changeDirection += ChangeDirectionMidAir;
+        PlayerInputs.stopChangeDirection += StopChangeDirectionMidAir;
     }
 
     private void OnDisable()
@@ -87,5 +99,6 @@ public class PowerUpsLogic : MonoBehaviour
         PlayerInputs.slowTime -= SlowTime;
         PlayerInputs.stopSlowTime -= StopSlowTime;
         PlayerInputs.changeDirection -= ChangeDirectionMidAir;
+        PlayerInputs.stopChangeDirection -= StopChangeDirectionMidAir;
     }
 }

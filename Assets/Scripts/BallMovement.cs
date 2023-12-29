@@ -50,17 +50,26 @@ public class BallMovement : MonoBehaviour
             YSpeed = ballSpeed;
             XSpeed = ballSpeed;
 
-            direction = arrowPoint.transform.position - transform.position;
+            GetDirectionVector();
             touchingWall = false;
-            arrowPoint.GetComponent<DirectionArrow>().setArrowLine(touchingWall);
+            ChangeShowArrow(touchingWall);
             IncrementBallSpeed();
 
-            if (touchingMovingWall) {
+            if (touchingMovingWall) { //Chocar pared con movimiento
                 touchingMovingWall = false;
                 transform.SetParent(null);
             }
         }
     }
+
+    public void GetDirectionVector() {
+        direction = arrowPoint.transform.position - transform.position;
+    }
+
+    public void ChangeShowArrow(bool show) {
+        arrowPoint.GetComponent<DirectionArrow>().setArrowLine(show);
+    }
+
     private void IncrementBallSpeed()
     {
         ballSpeed += speedIncrementation;
@@ -75,7 +84,7 @@ public class BallMovement : MonoBehaviour
 
         Debug.Log("Ball Colliding Wall"); //CHOQUEM AMB UNA PARET NORMAL
         touchingWall = true;
-        arrowPoint.GetComponent<DirectionArrow>().setArrowLine(touchingWall);
+        ChangeShowArrow(touchingWall);
 
         if (collision.gameObject.tag.Equals("MovingWall")) //CHOQUEM AMB PARET EN MOVIMENT
         {
