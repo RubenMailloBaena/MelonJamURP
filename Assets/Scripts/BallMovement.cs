@@ -31,13 +31,13 @@ public class BallMovement : MonoBehaviour
         if (!touchingWall)
         {
             //MOVIMIENTO CON TRANSFORM
-            //transform.position += new Vector3(direction.x, direction.y, 0f) * ballSpeed * Time.deltaTime;
+            transform.position += new Vector3(direction.x, direction.y, 0f) * ballSpeed * Time.deltaTime;
 
             //MOVIMIENTO CON VELOCITY
-            rb.velocity = direction * ballSpeed * Time.deltaTime;
+            //rb.velocity = direction * ballSpeed * Time.deltaTime;
         }
-        else
-            rb.velocity = Vector2.zero;
+        //else
+            //rb.velocity = Vector2.zero;
     }
 
     //Cunado estamos en una pared, seleccionamos la nueva direccion de movimento
