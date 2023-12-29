@@ -8,7 +8,7 @@ public class LevelConditionsLogic : MonoBehaviour
     [SerializeField] private float gravityScale = 2;
 
 
-    private bool G = false, W = false, S = false, M = false, E = false;
+    private bool G = false, W = false, S = false, M = false, E = false, R = false;
 
     private GameController.LevelConditions levelCondition;
     private GameObject player;
@@ -24,6 +24,10 @@ public class LevelConditionsLogic : MonoBehaviour
         {
             case GameController.LevelConditions.Gravity:
                 G = true;
+                break;
+
+            case GameController.LevelConditions.Rainy:
+                R = true;
                 break;
 
             case GameController.LevelConditions.Windy:
