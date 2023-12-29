@@ -8,7 +8,7 @@ public class BallMovement : MonoBehaviour
     [Header("Atributes")]
     [SerializeField] private float ballSpeed = 5f;
     [SerializeField] private float speedIncrementation = 2f;
-    private bool touchingWall = true;
+    private bool touchingWall = true, touchingMovingWall = false;
     private Vector2 direction;
 
     public static Action onJump;
@@ -37,7 +37,7 @@ public class BallMovement : MonoBehaviour
             //rb.velocity = direction * ballSpeed * Time.deltaTime;
         }
         //else
-            //rb.velocity = Vector2.zero;
+        //rb.velocity = Vector2.zero;
     }
 
     //Cunado estamos en una pared, seleccionamos la nueva direccion de movimento
@@ -46,12 +46,17 @@ public class BallMovement : MonoBehaviour
 
         if (touchingWall && !arrowPoint.GetComponent<DirectionArrow>().getIsColliding())
         {
+            onJump?.Invoke();
+
             direction = arrowPoint.transform.position - transform.position;
             touchingWall = false;
             arrowPoint.GetComponent<DirectionArrow>().setArrowLine(touchingWall);
             IncrementBallSpeed();
 
-            onJump?.Invoke();
+            if (touchingMovingWall) {
+                touchingMovingWall = false;
+                transform.SetParent(null);
+            }
         }
     }
     private void IncrementBallSpeed()
@@ -63,12 +68,19 @@ public class BallMovement : MonoBehaviour
     //Cunado tocamos una pared, detemos el movimiento
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Ball Colliding Wall");
+        onWall?.Invoke();
+
+        Debug.Log("Ball Colliding Wall"); //CHOQUEM AMB UNA PARET NORMAL
         touchingWall = true;
         arrowPoint.GetComponent<DirectionArrow>().setArrowLine(touchingWall);
 
-        onWall?.Invoke();
+        if (collision.gameObject.tag.Equals("MovingWall")) //CHOQUEM AMB PARET EN MOVIMENT
+        {
+            touchingMovingWall = true;
+            transform.SetParent(collision.transform);
+        }
     }
+
 
     //Dibujar la direccion
     private void OnDrawGizmos()

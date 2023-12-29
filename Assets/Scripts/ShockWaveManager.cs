@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShockWaveManager : MonoBehaviour
 {
     [SerializeField] private float shockWaveTime = 0.75f;
+
     private Coroutine shockWaveCouroutine;
     private Material material;
     private static int waveDistanceFromCenter = Shader.PropertyToID("_WaveDistanceFromCenter");
@@ -15,12 +16,13 @@ public class ShockWaveManager : MonoBehaviour
     }
 
     
-    public void CallShockWave(GameObject notUsed)
+    public void CallShockWave(GameObject instrument)
     {
-        shockWaveCouroutine = StartCoroutine(ShockWaveAction(-0.1f, 1f));
+        shockWaveCouroutine = StartCoroutine(ShockWaveAction(-0.1f, 1f, instrument.transform));
     }
 
-    private IEnumerator ShockWaveAction(float startPos, float endPos) {
+    private IEnumerator ShockWaveAction(float startPos, float endPos, Transform trans) {
+        material.SetVector("RingSpawnPosition", trans.position);
         material.SetFloat(waveDistanceFromCenter, startPos);
 
         float lerpedAmount = 0f;

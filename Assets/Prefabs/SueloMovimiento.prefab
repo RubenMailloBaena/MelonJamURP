@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 5169645117592675142}
   m_Layer: 0
   m_Name: SueloMovimiento
-  m_TagString: Untagged
+  m_TagString: MovingWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,3 +210,4 @@ MonoBehaviour:
   speed: 5
   a: {fileID: 2702533219353722365}
   b: {fileID: 294387113538755283}
+  aDone: 0
