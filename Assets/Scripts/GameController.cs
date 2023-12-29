@@ -13,9 +13,6 @@ public class GameController : MonoBehaviour
         Rainy,
         Windy,
         Sound,
-        Magnetism,
-        Electricity,
-        Dimension
     }
 
     //Atributos para controlar las caracteristicas del nivel

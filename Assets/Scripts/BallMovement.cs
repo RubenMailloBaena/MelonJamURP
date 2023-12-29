@@ -6,7 +6,7 @@ using System;
 public class BallMovement : MonoBehaviour
 {
     [Header("Atributes")]
-    [SerializeField] private float ballSpeed = 5f;
+    [SerializeField] public float ballSpeed = 5f;
     [HideInInspector] private float speedIncrementation = 0f;
     private bool touchingWall = true, touchingMovingWall = false;
     private Vector2 direction;
@@ -16,7 +16,6 @@ public class BallMovement : MonoBehaviour
 
     public static Action onJump;
     public static Action onWall;
-    public static Action onRoof;
 
     [Header("Other Components")]
     [SerializeField] private GameObject arrowPoint; //Referencia a la flecha de direccion
@@ -84,11 +83,6 @@ public class BallMovement : MonoBehaviour
         {
             touchingMovingWall = true;
             transform.SetParent(collision.transform);
-        }
-
-        if (collision.gameObject.tag.Equals("Roof")) //CHOCAMOS CON EL TECHO
-        {
-            onRoof?.Invoke();
         }
     }
 

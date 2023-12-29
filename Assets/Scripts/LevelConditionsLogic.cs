@@ -7,8 +7,11 @@ public class LevelConditionsLogic : MonoBehaviour
     [Header("Gravity Variables")]
     [SerializeField] private float gravityScale = 2;
 
+    [Header("Rainy Variables")]
+    [SerializeField] private float slowValue = 5;
 
-    private bool G = false, W = false, S = false, M = false, E = false, R = false;
+
+    private bool G = false, W = false, S = false, R = false;
 
     private GameController.LevelConditions levelCondition;
     private GameObject player;
@@ -24,26 +27,22 @@ public class LevelConditionsLogic : MonoBehaviour
         {
             case GameController.LevelConditions.Gravity:
                 G = true;
+                Gravity();
                 break;
 
             case GameController.LevelConditions.Rainy:
                 R = true;
+                Rainy();
                 break;
 
             case GameController.LevelConditions.Windy:
                 W = true;
+                Windy();
                 break;
 
             case GameController.LevelConditions.Sound:
                 S = true;
-                break;
-
-            case GameController.LevelConditions.Magnetism:
-                M = true;
-                break;
-
-            case GameController.LevelConditions.Electricity:
-                E = true;
+                Sound();
                 break;
 
             default:
@@ -57,34 +56,39 @@ public class LevelConditionsLogic : MonoBehaviour
         Gravity();
         Windy();
         Sound();
-        Magnetism();
-        Electricity();
     }
 
     private void Gravity(){
         if (G && !touchingWall)
         {
-            //Debug.Log(player.GetComponent<BallMovement>().YSpeed);
             player.GetComponent<BallMovement>().YSpeed -= (gravityScale * Time.deltaTime);
+        }
+    }
+
+    private void Rainy() {
+        if (R) {
+            player.GetComponent<BallMovement>().ballSpeed -= slowValue;
         }
     }
 
     private void Windy()
     {
+        if (W)
+        {
 
+        }
     }
 
     private void Sound()
     {
+        if (S)
+        {
+
+        }
     }
 
-    private void Magnetism()
-    {
-    }
 
-    private void Electricity()
-    {
-    }
+
 
 
     private void SetTrue() 
@@ -92,9 +96,7 @@ public class LevelConditionsLogic : MonoBehaviour
         touchingWall = true;
     }
 
-    private void SetRoofTrue() 
-    {
-    }
+    
 
     private void SetFalse()
     {
@@ -107,13 +109,11 @@ public class LevelConditionsLogic : MonoBehaviour
     {
         PlayerInputs.selectDirection += SetFalse;
         BallMovement.onWall += SetTrue;
-        BallMovement.onRoof += SetRoofTrue;
     }
 
     private void OnDisable()
     {
         PlayerInputs.selectDirection -= SetFalse;
         BallMovement.onWall -= SetTrue;
-        BallMovement.onRoof -= SetRoofTrue;
     }
 }
