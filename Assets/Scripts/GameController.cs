@@ -94,6 +94,10 @@ public class GameController : MonoBehaviour
         jumpsLeftText.text = totalJumps.ToString();
     }
 
+    private void UpdateUITextFromElectricity(GameObject notused) {
+        jumpsLeftText.text = totalJumps.ToString();
+    }
+
 
 
     public LevelConditions getLevelCondition() {
@@ -105,6 +109,7 @@ public class GameController : MonoBehaviour
         InstrumentLogic.onInstrument += checkIfCorrectInstrument;
         BallMovement.onJump += UpdateUIText;
         BallMovement.onWall += LossAction;
+        BallMovement.onElectricity += UpdateUITextFromElectricity;
     }
 
     private void OnDisable()
@@ -112,5 +117,6 @@ public class GameController : MonoBehaviour
         InstrumentLogic.onInstrument -= checkIfCorrectInstrument;
         BallMovement.onJump -= UpdateUIText;
         BallMovement.onWall -= LossAction;
+        BallMovement.onElectricity -= UpdateUITextFromElectricity;
     }
 }

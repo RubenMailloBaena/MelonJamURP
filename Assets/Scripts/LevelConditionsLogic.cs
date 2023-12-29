@@ -22,7 +22,7 @@ public class LevelConditionsLogic : MonoBehaviour
     private GameController.LevelConditions levelCondition;
     private GameObject player;
 
-    public bool touchingWall = true;
+    private bool touchingWall = true;
 
     private void Start()
     {
@@ -87,7 +87,7 @@ public class LevelConditionsLogic : MonoBehaviour
     {
         if (S && gameObject.tag.Equals("Wall"))
         {
-            gameObject.GetComponent<GameController>().totalJumps -= LessJumps;
+            this.gameObject.GetComponent<GameController>().totalJumps -= LessJumps;
         }
     }
 
