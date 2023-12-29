@@ -14,6 +14,10 @@ public class PlayerInputs : MonoBehaviour
     public static Action slowTime;
     public static Action stopSlowTime;
 
+    //CAMBIAR DIRECCION EN EL AIRE
+    public KeyCode changeDirectionMidAir;
+    public static Action changeDirection;
+    public static Action stopChangeDirection;
     
     void Update()
     {
@@ -34,6 +38,14 @@ public class PlayerInputs : MonoBehaviour
         }
         if (Input.GetKeyUp(slowTimeKey)) {
             stopSlowTime?.Invoke();
+        }
+
+        //CAMBIAR DIRECCION EN EL AIRE
+        if (Input.GetKey(changeDirectionMidAir)) {
+            changeDirection?.Invoke();
+        }
+        if (Input.GetKeyUp(changeDirectionMidAir)) {
+            stopChangeDirection?.Invoke();
         }
     }
 }

@@ -98,7 +98,7 @@ public class DirectionArrow : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Wall") || collision.gameObject.tag.Equals("MovingWall") || collision.gameObject.tag.Equals("Obstacle"))
         {
-            //isColliding = true;
+            isColliding = true;
         }
     }
 

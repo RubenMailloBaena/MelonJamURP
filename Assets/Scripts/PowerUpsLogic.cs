@@ -11,8 +11,13 @@ public class PowerUpsLogic : MonoBehaviour
     private float timeToUse;
     private Image SlowTimeBar;
 
+
+    //[Header("Change Direction Mid-Air")]
+
+
     private void Start()
     {
+        //SLOW TIME
         SlowTimeBar = GameObject.Find("SlowTimeBar").GetComponent<Image>();
         timeToUse = SlowTimePowerUpUseTime;
     }
@@ -25,7 +30,6 @@ public class PowerUpsLogic : MonoBehaviour
             Time.fixedDeltaTime = Time.timeScale * 0.02f;
 
             timeToUse -= Time.deltaTime;
-            Debug.Log(timeToUse);
         }
         else 
         {
@@ -43,25 +47,45 @@ public class PowerUpsLogic : MonoBehaviour
     private void SlowTimeBarUI() {
         SlowTimeBar.fillAmount = Map(timeToUse, 0f, SlowTimePowerUpUseTime, 0f, 1f);
     }
-
-
-    
-    
     
     private float Map(float value, float inMin, float inMax, float outMin, float outMax)
     {
         return (value - inMin) / (inMax - inMin) * (outMax - outMin) + outMin;
     }
 
+
+    //CHANGE DIRECTION MID-AIR
+    private void ChangeDirectionMidAir() {
+        Debug.Log("CHANGING DIRECTION");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     private void OnEnable()
     {
         PlayerInputs.slowTime += SlowTime;
         PlayerInputs.stopSlowTime += StopSlowTime;
+        PlayerInputs.changeDirection += ChangeDirectionMidAir;
     }
 
     private void OnDisable()
     {
         PlayerInputs.slowTime -= SlowTime;
         PlayerInputs.stopSlowTime -= StopSlowTime;
+        PlayerInputs.changeDirection -= ChangeDirectionMidAir;
     }
 }

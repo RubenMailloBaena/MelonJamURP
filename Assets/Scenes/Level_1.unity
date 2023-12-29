@@ -158,17 +158,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5178505308039342221, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
   m_PrefabInstance: {fileID: 8795876901882451774}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &106735880 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6688796082517476897, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-  m_PrefabInstance: {fileID: 365607893743339883}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &114430482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
@@ -273,8 +262,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.026049972, y: -0.108450055, z: 0}
-    m_Extent: {x: 1.34245, y: 1.36385, z: 0}
+    m_Center: {x: 0.019949973, y: -0.10285002, z: 0}
+    m_Extent: {x: 1.33985, y: 1.37695, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -582,8 +571,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15905002, y: 0.15495002, z: 0}
-    m_Extent: {x: 1.10685, y: 2.3569498, z: 0}
+    m_Center: {x: -0.15355003, y: 0.15674996, z: 0}
+    m_Extent: {x: 1.10745, y: 2.36045, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -764,8 +753,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.033450007, y: 0.0025999546, z: 0}
-    m_Extent: {x: 0.86525, y: 2.4749, z: 0}
+    m_Center: {x: 0.030000001, y: 0.009500027, z: 0}
+    m_Extent: {x: 0.86300004, y: 2.4728, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -979,8 +968,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.042250007, y: -0.075399995, z: 0}
-    m_Extent: {x: 0.90534997, y: 2.5904999, z: 0}
+    m_Center: {x: 0.04550001, y: -0.070500016, z: 0}
+    m_Extent: {x: 0.9094, y: 2.5875, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1100,8 +1089,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.07029998, y: -0.0837, z: 0}
-    m_Extent: {x: 1.291, y: 1.4056001, z: 0}
+    m_Center: {x: 0.08424997, y: -0.08895004, z: 0}
+    m_Extent: {x: 1.29405, y: 1.40565, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1435,6 +1424,10 @@ PrefabInstance:
       propertyPath: spriteRenderer
       value: 
       objectReference: {fileID: 614396543}
+    - target: {fileID: 3068736107256695559, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
+      propertyPath: wallLayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6015977323794436434, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1805,7 +1798,7 @@ PrefabInstance:
     - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: SlowTimeBar
       value: 
-      objectReference: {fileID: 106735880}
+      objectReference: {fileID: 0}
     - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: SlowMotionValue
       value: 0.5
@@ -1857,6 +1850,10 @@ PrefabInstance:
     - target: {fileID: 1736104413476358870, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: m_Name
       value: GameController
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165894433683952822, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: changeDirectionMidAir
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8499048855335075062, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: gravity
