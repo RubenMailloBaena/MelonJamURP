@@ -262,8 +262,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.024649978, y: -0.101200044, z: 0}
-    m_Extent: {x: 1.33955, y: 1.3689001, z: 0}
+    m_Center: {x: 0.02274996, y: -0.10699999, z: 0}
+    m_Extent: {x: 1.3347499, y: 1.3759, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -571,8 +571,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.1464, y: 0.16705, z: 0}
-    m_Extent: {x: 1.1064, y: 2.35465, z: 0}
+    m_Center: {x: -0.1561, y: 0.16355002, z: 0}
+    m_Extent: {x: 1.0991, y: 2.3533502, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -753,8 +753,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.033600003, y: 0.0079, z: 0}
-    m_Extent: {x: 0.86020005, y: 2.4673, z: 0}
+    m_Center: {x: 0.033150017, y: 0.005300045, z: 0}
+    m_Extent: {x: 0.86535, y: 2.4684, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -968,8 +968,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.05154997, y: -0.06655002, z: 0}
-    m_Extent: {x: 0.90805, y: 2.58815, z: 0}
+    m_Center: {x: 0.043599993, y: -0.06920004, z: 0}
+    m_Extent: {x: 0.9137, y: 2.5948, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1089,8 +1089,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.08074999, y: -0.08555001, z: 0}
-    m_Extent: {x: 1.28935, y: 1.41025, z: 0}
+    m_Center: {x: 0.08394998, y: -0.088100016, z: 0}
+    m_Extent: {x: 1.2953501, y: 1.4085, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1351,89 +1351,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 48712003294843144, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2e735a58e02797747b45e480f50cb97d, type: 3}
-    - target: {fileID: 48712003294843144, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_Color.b
-      value: 0.38431373
-      objectReference: {fileID: 0}
-    - target: {fileID: 48712003294843144, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_Color.g
-      value: 0.38431373
-      objectReference: {fileID: 0}
-    - target: {fileID: 48712003294843144, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_Color.r
-      value: 0.8207547
-      objectReference: {fileID: 0}
-    - target: {fileID: 1284325410386037175, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1284325410386037175, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1284325410386037175, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1284325410386037175, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
-      objectReference: {fileID: 0}
-    - target: {fileID: 2380494827538758991, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2380494827538758991, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2380494827538758991, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2380494827538758991, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
-      objectReference: {fileID: 0}
     - target: {fileID: 5897834959593532246, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_Name
       value: UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 5948771724460046756, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5948771724460046756, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5948771724460046756, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5948771724460046756, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
-      objectReference: {fileID: 0}
-    - target: {fileID: 6340375800116114817, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6340375800116114817, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6340375800116114817, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6340375800116114817, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 6683550235897137829, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_LocalPosition.x
