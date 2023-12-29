@@ -5,8 +5,15 @@ using System;
 
 public class PlayerInputs : MonoBehaviour
 {
-    public static Action selectDirection;
+    //SALTO
     public KeyCode jumpKey;
+    public static Action selectDirection;
+
+    //RELENTIZAR TIEMPO
+    public KeyCode slowTimeKey;
+    public static Action slowTime;
+    public static Action stopSlowTime;
+
     
     void Update()
     {
@@ -14,9 +21,19 @@ public class PlayerInputs : MonoBehaviour
     }
 
     private void CheckInputs() {
+        //SALTO
         if (Input.GetKeyDown(jumpKey)) { 
             selectDirection?.Invoke();
             Debug.Log(jumpKey + " pressed");
+        }
+
+        //SLOW TIME
+        if (Input.GetKey(slowTimeKey)) {
+            slowTime?.Invoke();
+            Debug.Log(slowTimeKey + " pressed");
+        }
+        if (Input.GetKeyUp(slowTimeKey)) {
+            stopSlowTime?.Invoke();
         }
     }
 }

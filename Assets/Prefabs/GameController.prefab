@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpKey: 32
+  slowTimeKey: 304
 --- !u!114 &8499048855335075062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,3 +91,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5168190db9e734db996df7e7d3e7c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SlowTimePowerUpUseTime: 3
+  SlowMotionValue: 0.3
