@@ -802,7 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0650fb3cdbe354aaf89ce9c0433bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCondition: 0
+  levelCondition: 4
   totalJumps: 20
   nextLevelName: Level_7
   levelInstruments:
