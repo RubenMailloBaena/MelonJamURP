@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
     //Atributos para controlar las caracteristicas del nivel
     [Header("Caracteristicas del nivel")]
     [SerializeField] private LevelConditions levelCondition;
-    [SerializeField] private int totalJumps = 20;
+    [SerializeField] public int totalJumps = 20;
     [SerializeField] private String nextLevelName = "Level_2"; 
 
     [Header("Instruments")]

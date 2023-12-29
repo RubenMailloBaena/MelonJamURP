@@ -13,6 +13,9 @@ public class LevelConditionsLogic : MonoBehaviour
     [Header("Windy Variables")]
     [SerializeField] private float WindValue = 5;
 
+    [Header("Electricity Variables")]
+    [SerializeField] private int LessJumps = 2;
+
 
     private bool G = false, W = false, S = false, R = false;
 
@@ -82,9 +85,9 @@ public class LevelConditionsLogic : MonoBehaviour
 
     private void Electricity(GameObject gameObject)
     {
-        if (S)
+        if (S && gameObject.tag.Equals("Wall"))
         {
-
+            gameObject.GetComponent<GameController>().totalJumps -= LessJumps;
         }
     }
 
@@ -110,11 +113,13 @@ public class LevelConditionsLogic : MonoBehaviour
     {
         PlayerInputs.selectDirection += SetFalse;
         BallMovement.onWall += SetTrue;
+        BallMovement.onElectricity += Electricity;
     }
 
     private void OnDisable()
     {
         PlayerInputs.selectDirection -= SetFalse;
         BallMovement.onWall -= SetTrue;
+        BallMovement.onElectricity -= Electricity;
     }
 }
