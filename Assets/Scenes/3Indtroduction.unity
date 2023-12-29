@@ -1522,7 +1522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Our protagonist, inspired by the joy she can create through music, embarks
+  m_text: Our protagonist, inspired by the joy he can create through music, embarks
     on a journey to enchant concerts in every corner.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
