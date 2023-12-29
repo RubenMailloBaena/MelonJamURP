@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class LevelConditionsLogic : MonoBehaviour
 {
+    [Header("Gravity Variables")]
+    [SerializeField] private float gravityScale = 2;
+
+
     private bool G = false, W = false, S = false, M = false, E = false;
 
     private GameController.LevelConditions levelCondition;
-    private Rigidbody2D playerRB;
+    private GameObject player;
 
     private bool touchingWall = true;
 
     private void Start()
     {
-        levelCondition = this.gameObject.GetComponent<GameController>().getLevelCondition();
-        playerRB = GameObject.Find("Ball").GetComponent<Rigidbody2D>();
+        levelCondition = gameObject.GetComponent<GameController>().getLevelCondition();
+        player = GameObject.Find("Ball");
 
         switch (levelCondition)
         {
@@ -54,15 +58,11 @@ public class LevelConditionsLogic : MonoBehaviour
     }
 
     private void Gravity(){
-        if (G && !touchingWall) {
-            Debug.LogWarning(touchingWall);
-
+        if (G && !touchingWall)
+        {
+            player.GetComponent<BallMovement>().YSpeed -= gravityScale * Time.deltaTime;
         }
     }
-
-   
-
-    
 
     private void Windy()
     {
@@ -95,13 +95,13 @@ public class LevelConditionsLogic : MonoBehaviour
 
     private void OnEnable()
     {
-        BallMovement.onJump += SetFalse;
+        PlayerInputs.selectDirection += SetFalse;
         BallMovement.onWall += SetTrue;
     }
 
     private void OnDisable()
     {
-        BallMovement.onJump -= SetFalse;
+        PlayerInputs.selectDirection -= SetFalse;
         BallMovement.onWall -= SetTrue;
     }
 }

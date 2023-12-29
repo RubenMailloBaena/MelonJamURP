@@ -189,8 +189,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0052999854, y: -0.0038999915, z: 0}
-    m_Extent: {x: 1.0039, y: 1.0004001, z: 0}
+    m_Center: {x: 0.0010499954, y: -0.0034499764, z: 0}
+    m_Extent: {x: 0.99175, y: 0.99315, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0650fb3cdbe354aaf89ce9c0433bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCondition: 0
+  levelCondition: 1
   totalJumps: 20
   nextLevelName: Level_2
   levelInstruments:
@@ -372,8 +372,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.013849974, y: -0.10095, z: 0}
-    m_Extent: {x: 1.34215, y: 1.37555, z: 0}
+    m_Center: {x: 0.026799977, y: -0.097249985, z: 0}
+    m_Extent: {x: 1.3443, y: 1.36675, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -681,8 +681,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15289998, y: 0.15625, z: 0}
-    m_Extent: {x: 1.1056, y: 2.35445, z: 0}
+    m_Center: {x: -0.15450001, y: 0.15980005, z: 0}
+    m_Extent: {x: 1.1065, y: 2.3601, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -863,8 +863,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.036650002, y: -0.0010499954, z: 0}
-    m_Extent: {x: 0.86105, y: 2.46905, z: 0}
+    m_Center: {x: 0.03549999, y: -0.0014500618, z: 0}
+    m_Extent: {x: 0.8598, y: 2.47475, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1078,8 +1078,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.041049987, y: -0.07120001, z: 0}
-    m_Extent: {x: 0.90495, y: 2.5863, z: 0}
+    m_Center: {x: 0.04729998, y: -0.07869995, z: 0}
+    m_Extent: {x: 0.9102, y: 2.5909, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1199,8 +1199,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.08515, y: -0.086299956, z: 0}
-    m_Extent: {x: 1.29235, y: 1.4070001, z: 0}
+    m_Center: {x: 0.07670003, y: -0.0826, z: 0}
+    m_Extent: {x: 1.2941, y: 1.4172, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1541,7 +1541,7 @@ PrefabInstance:
       objectReference: {fileID: 614396543}
     - target: {fileID: 6015977323794436434, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.35
+      value: 4.12
       objectReference: {fileID: 0}
     - target: {fileID: 6015977323794436434, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1630,7 +1630,7 @@ PrefabInstance:
     - target: {fileID: 2963823734708294226, guid: 96652af334a4564419f70a72c5fc6a08, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 4651647451156680666, guid: 96652af334a4564419f70a72c5fc6a08, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.07
@@ -1952,6 +1952,22 @@ PrefabInstance:
     - target: {fileID: 1736104413476358870, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: m_Name
       value: GameController
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499048855335075062, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: gravity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499048855335075062, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: gravityScale
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499048855335075062, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: maxFallSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499048855335075062, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: fallMultiplier
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

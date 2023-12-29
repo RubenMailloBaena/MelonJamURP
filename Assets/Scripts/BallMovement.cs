@@ -7,9 +7,12 @@ public class BallMovement : MonoBehaviour
 {
     [Header("Atributes")]
     [SerializeField] private float ballSpeed = 5f;
-    [SerializeField] private float speedIncrementation = 2f;
+    [HideInInspector] private float speedIncrementation = 0f;
     private bool touchingWall = true, touchingMovingWall = false;
     private Vector2 direction;
+
+    [HideInInspector] public float YSpeed;
+    [HideInInspector] public float XSpeed;
 
     public static Action onJump;
     public static Action onWall;
@@ -18,6 +21,7 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private GameObject arrowPoint; //Referencia a la flecha de direccion
     [SerializeField] private Rigidbody2D rb; //For velocity
 
+    
 
     void FixedUpdate()
     {
@@ -31,8 +35,8 @@ public class BallMovement : MonoBehaviour
         if (!touchingWall)
         {
             //MOVIMIENTO CON TRANSFORM
-            transform.position += new Vector3(direction.x, direction.y, 0f) * ballSpeed * Time.deltaTime;
-
+            transform.position += new Vector3(direction.x * (ballSpeed * Time.deltaTime), direction.y * YSpeed * Time.deltaTime, 0f);
+            Debug.Log(YSpeed);
             //MOVIMIENTO CON VELOCITY
             //rb.velocity = direction * ballSpeed * Time.deltaTime;
         }
@@ -47,6 +51,8 @@ public class BallMovement : MonoBehaviour
         if (touchingWall && !arrowPoint.GetComponent<DirectionArrow>().getIsColliding())
         {
             onJump?.Invoke();
+
+            YSpeed = ballSpeed;
 
             direction = arrowPoint.transform.position - transform.position;
             touchingWall = false;
