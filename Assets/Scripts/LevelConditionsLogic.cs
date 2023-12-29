@@ -10,6 +10,9 @@ public class LevelConditionsLogic : MonoBehaviour
     [Header("Rainy Variables")]
     [SerializeField] private float slowValue = 5;
 
+    [Header("Windy Variables")]
+    [SerializeField] private float WindValue = 5;
+
 
     private bool G = false, W = false, S = false, R = false;
 
@@ -40,9 +43,8 @@ public class LevelConditionsLogic : MonoBehaviour
                 Windy();
                 break;
 
-            case GameController.LevelConditions.Sound:
+            case GameController.LevelConditions.Electricity:
                 S = true;
-                Sound();
                 break;
 
             default:
@@ -55,7 +57,6 @@ public class LevelConditionsLogic : MonoBehaviour
     {
         Gravity();
         Windy();
-        Sound();
     }
 
     private void Gravity(){
@@ -73,13 +74,13 @@ public class LevelConditionsLogic : MonoBehaviour
 
     private void Windy()
     {
-        if (W)
+        if (W && !touchingWall)
         {
-
+            player.GetComponent<BallMovement>().XSpeed -= (WindValue * Time.deltaTime);
         }
     }
 
-    private void Sound()
+    private void Electricity(GameObject gameObject)
     {
         if (S)
         {

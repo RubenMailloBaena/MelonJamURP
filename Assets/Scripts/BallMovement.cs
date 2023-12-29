@@ -9,7 +9,7 @@ public class BallMovement : MonoBehaviour
     [SerializeField] public float ballSpeed = 5f;
     [HideInInspector] private float speedIncrementation = 0f;
     private bool touchingWall = true, touchingMovingWall = false;
-    private Vector2 direction;
+    [HideInInspector] public Vector2 direction;
 
     [HideInInspector] public float YSpeed;
     [HideInInspector] public float XSpeed;
@@ -35,7 +35,7 @@ public class BallMovement : MonoBehaviour
         if (!touchingWall)
         {
             //MOVIMIENTO CON TRANSFORM
-            transform.position += new Vector3(direction.x * (ballSpeed * Time.deltaTime), direction.y * YSpeed * Time.deltaTime, 0f);
+            transform.position += new Vector3(direction.x * (XSpeed * Time.deltaTime), direction.y * (YSpeed * Time.deltaTime), 0f);
             //MOVIMIENTO CON VELOCITY
             //rb.velocity = direction * ballSpeed * Time.deltaTime;
         }
@@ -52,6 +52,7 @@ public class BallMovement : MonoBehaviour
             onJump?.Invoke();
 
             YSpeed = ballSpeed;
+            XSpeed = ballSpeed;
 
             direction = arrowPoint.transform.position - transform.position;
             touchingWall = false;

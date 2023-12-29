@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
         Gravity,
         Rainy,
         Windy,
-        Sound,
+        Electricity,
     }
 
     //Atributos para controlar las caracteristicas del nivel

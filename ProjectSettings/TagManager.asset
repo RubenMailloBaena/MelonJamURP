@@ -7,7 +7,7 @@ TagManager:
   - Wall
   - Instrument
   - MovingWall
-  - Roof
+  - Obstacle
   layers:
   - Default
   - TransparentFX
