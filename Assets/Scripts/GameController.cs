@@ -10,10 +10,13 @@ public class GameController : MonoBehaviour
     public enum LevelConditions { //Para seleccionar las posibles condiciones del nivel
         Nothing,
         Gravity,
+        Rainny,
         Windy,
         Sound,
         Magnetism,
-        Electricity
+        Electricity,
+        Light and shadow,
+        Dimension
     }
 
     //Atributos para controlar las caracteristicas del nivel
