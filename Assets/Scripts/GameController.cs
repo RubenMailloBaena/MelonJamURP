@@ -15,7 +15,6 @@ public class GameController : MonoBehaviour
         Sound,
         Magnetism,
         Electricity,
-        Light and shadow,
         Dimension
     }
 

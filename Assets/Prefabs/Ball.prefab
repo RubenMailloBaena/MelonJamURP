@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d47956022fc814f9c0e931274b446e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballSpeed: 650
+  ballSpeed: 10
   speedIncrementation: 0
   arrowPoint: {fileID: 3795265471876462630}
   rb: {fileID: 2173794621981875022}
