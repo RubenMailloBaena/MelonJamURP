@@ -262,8 +262,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.02244997, y: -0.10374999, z: 0}
-    m_Extent: {x: 1.34005, y: 1.36185, z: 0}
+    m_Center: {x: 0.024649978, y: -0.101200044, z: 0}
+    m_Extent: {x: 1.33955, y: 1.3689001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -571,8 +571,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15620002, y: 0.1667, z: 0}
-    m_Extent: {x: 1.1034, y: 2.3602, z: 0}
+    m_Center: {x: -0.1464, y: 0.16705, z: 0}
+    m_Extent: {x: 1.1064, y: 2.35465, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -753,8 +753,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.029249996, y: 0.008100033, z: 0}
-    m_Extent: {x: 0.85714996, y: 2.4677, z: 0}
+    m_Center: {x: 0.033600003, y: 0.0079, z: 0}
+    m_Extent: {x: 0.86020005, y: 2.4673, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -968,8 +968,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.03915, y: -0.07160008, z: 0}
-    m_Extent: {x: 0.90915, y: 2.5903, z: 0}
+    m_Center: {x: 0.05154997, y: -0.06655002, z: 0}
+    m_Extent: {x: 0.90805, y: 2.58815, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1089,8 +1089,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.07880002, y: -0.087249994, z: 0}
-    m_Extent: {x: 1.2907, y: 1.40935, z: 0}
+    m_Center: {x: 0.08074999, y: -0.08555001, z: 0}
+    m_Extent: {x: 1.28935, y: 1.41025, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1357,15 +1357,15 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 2e735a58e02797747b45e480f50cb97d, type: 3}
     - target: {fileID: 48712003294843144, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.38431373
       objectReference: {fileID: 0}
     - target: {fileID: 48712003294843144, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.38431373
       objectReference: {fileID: 0}
     - target: {fileID: 48712003294843144, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.8207547
       objectReference: {fileID: 0}
     - target: {fileID: 1284325410386037175, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_fontColor.b
