@@ -782,8 +782,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -1.02625, y: -0.00485, z: 0}
     m_Extent: {x: 2.44425, y: 0.81544995, z: 0}
+=======
+    m_Center: {x: -1.0252501, y: -0.0037499964, z: 0}
+    m_Extent: {x: 2.4509501, y: 0.82525, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -854,8 +859,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -1.0251, y: -0.0146999955, z: 0}
     m_Extent: {x: 2.4492, y: 0.8212, z: 0}
+=======
+    m_Center: {x: -1.0209501, y: -0.0065999925, z: 0}
+    m_Extent: {x: 2.44465, y: 0.82739997, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1146,8 +1156,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -0.02520001, y: -0.00054997206, z: 0}
     m_Extent: {x: 1.1829, y: 1.2342501, z: 0}
+=======
+    m_Center: {x: -0.019500017, y: -0.0012000203, z: 0}
+    m_Extent: {x: 1.1834, y: 1.2367, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1634,8 +1649,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -0.06550002, y: 0.023899972, z: 0}
     m_Extent: {x: 1.2514, y: 1.2139001, z: 0}
+=======
+    m_Center: {x: -0.05910003, y: 0.031150043, z: 0}
+    m_Extent: {x: 1.2508, y: 1.2111499, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1721,8 +1741,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -1.0250001, y: 0.00034999847, z: 0}
     m_Extent: {x: 2.4491, y: 0.81955, z: 0}
+=======
+    m_Center: {x: -1.02675, y: -0.010600001, z: 0}
+    m_Extent: {x: 2.4514499, y: 0.82019997, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1878,8 +1903,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: 0.17484999, y: -0.05704999, z: 0}
     m_Extent: {x: 1.19995, y: 1.22105, z: 0}
+=======
+    m_Center: {x: 0.17145002, y: -0.055350006, z: 0}
+    m_Extent: {x: 1.19865, y: 1.22065, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1960,8 +1990,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -1.02525, y: -0.0041999817, z: 0}
     m_Extent: {x: 2.44805, y: 0.8201, z: 0}
+=======
+    m_Center: {x: -1.02325, y: -0.0058499873, z: 0}
+    m_Extent: {x: 2.4493499, y: 0.81525004, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2358,8 +2393,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -0.77015, y: -0.134, z: 0}
     m_Extent: {x: 0.82475, y: 1.8062, z: 0}
+=======
+    m_Center: {x: -0.768, y: -0.13995004, z: 0}
+    m_Extent: {x: 0.8255, y: 1.80275, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2552,11 +2592,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4072781472072259029, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 257
+      value: 262
       objectReference: {fileID: 0}
     - target: {fileID: 4072781472072259029, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -485.67
+      value: -270
       objectReference: {fileID: 0}
     - target: {fileID: 5897834959593532246, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_Name
@@ -2620,14 +2660,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9127814365081511954, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 522
+      value: 487.53
       objectReference: {fileID: 0}
     - target: {fileID: 9127814365081511954, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -485.67
+      value: -289
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8113898754648432979, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
+    - {fileID: 481257489698288954, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4819551430098727718, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       insertIndex: 1
@@ -2639,7 +2681,7 @@ PrefabInstance:
       insertIndex: 8
       addedObject: {fileID: 429742224}
     - targetCorrespondingSourceObject: {fileID: 4819551430098727718, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
-      insertIndex: 13
+      insertIndex: 12
       addedObject: {fileID: 804188421}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
