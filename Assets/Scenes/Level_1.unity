@@ -489,8 +489,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15720001, y: 0.16490006, z: 0}
-    m_Extent: {x: 1.11, y: 2.3539, z: 0}
+    m_Center: {x: -0.15030003, y: 0.16919994, z: 0}
+    m_Extent: {x: 1.1006, y: 2.3539, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -671,8 +671,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.038150012, y: 0.0032000542, z: 0}
-    m_Extent: {x: 0.86035, y: 2.4633, z: 0}
+    m_Center: {x: 0.03215, y: 0.00395, z: 0}
+    m_Extent: {x: 0.85704994, y: 2.4731498, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -713,7 +713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_ShapeLightFalloffSize
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
@@ -1195,8 +1195,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.048700005, y: -0.06454992, z: 0}
-    m_Extent: {x: 0.9137, y: 2.58885, z: 0}
+    m_Center: {x: 0.042349994, y: -0.07340002, z: 0}
+    m_Extent: {x: 0.91355, y: 2.5906, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1818,7 +1818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_ShapeLightFalloffSize
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
