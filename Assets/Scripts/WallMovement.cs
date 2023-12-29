@@ -7,7 +7,7 @@ public class WallMovement : MonoBehaviour
     [SerializeField]private float speed = 5;
     public Transform a, b;
     private Vector3 aPosition, bPosition;
-    private bool aDone = false;
+    public bool aDone = false;
 
     void Start()
     {
