@@ -6,6 +6,7 @@ using System;
 public class InstrumentLogic : MonoBehaviour
 {
     public static Action<GameObject> onInstrument;
+    public Color intrumentUIColor;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
