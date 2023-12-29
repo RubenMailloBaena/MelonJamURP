@@ -101,7 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballSpeed: 10
-  speedIncrementation: 0
+  direction: {x: 0, y: 0}
+  YSpeed: 0
+  XSpeed: 0
   arrowPoint: {fileID: 3795265471876462630}
   rb: {fileID: 2173794621981875022}
 --- !u!58 &7206384493082393936
@@ -212,13 +214,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
-  distanceToSource: 1.2
+  distanceToSource: 0.8
   speedIncrementation: 20
   maxRotationSpeed: 520
   obstacleCheckDistance: 1.25
   wallLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   orbitPoint: {fileID: 1990497975914894193}
   arrowSprite: {fileID: 0}
   spriteRenderer: {fileID: 0}
