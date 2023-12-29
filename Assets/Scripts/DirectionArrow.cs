@@ -50,7 +50,7 @@ public class DirectionArrow : MonoBehaviour
         Debug.DrawRay(orbitPoint.transform.position, screenCenterDirection, Color.red);
         Debug.DrawRay(orbitPoint.transform.position, screenCenterDirection, Color.blue);
 
-        if (hit.collider != null || hit2.collider != null)
+        if (hit.collider != null)
         {
             Debug.Log("HITTING WALL");
             Vector3 newDirection = Vector3.Reflect(screenCenterDirection.normalized, hit.normal);
@@ -58,7 +58,15 @@ public class DirectionArrow : MonoBehaviour
             transform.rotation = newRotation;
             transform.position = orbitPoint.transform.position + newDirection * distanceToSource;
         }
-        else 
+        else if (hit2.collider != null) 
+        {
+            Debug.Log("HITTING WALL");
+            Vector3 newDirection = Vector3.Reflect(screenCenterDirection.normalized, hit2.normal);
+            Quaternion newRotation = Quaternion.LookRotation(Vector3.forward, newDirection);
+            transform.rotation = newRotation;
+            transform.position = orbitPoint.transform.position + newDirection * distanceToSource;
+        }
+        else
         {
             //APUNTAR AL CENTRO
             Vector3 planeNormal = Vector3.forward;
