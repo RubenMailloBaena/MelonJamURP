@@ -189,8 +189,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.43545002, y: 0.015850008, z: 0}
-    m_Extent: {x: 1.4519501, y: 0.78445, z: 0}
+    m_Center: {x: 0.43379998, y: 0.017349988, z: 0}
+    m_Extent: {x: 1.456, y: 0.79505, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -912,8 +912,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.84945, y: -0.21305001, z: 0}
-    m_Extent: {x: 0.80455005, y: 2.49925, z: 0}
+    m_Center: {x: 0.8459, y: -0.21735, z: 0}
+    m_Extent: {x: 0.8115, y: 2.49525, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1618,8 +1618,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.44099998, y: 0.015850008, z: 0}
-    m_Extent: {x: 1.4534, y: 0.78985, z: 0}
+    m_Center: {x: 0.4386, y: 0.01605001, z: 0}
+    m_Extent: {x: 1.4512999, y: 0.79435, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2713,8 +2713,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.9656, y: 0.025100023, z: 0}
-    m_Extent: {x: 2.9698, y: 0.84819996, z: 0}
+    m_Center: {x: 1.97215, y: 0.026549995, z: 0}
+    m_Extent: {x: 2.96745, y: 0.84075, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2964,8 +2964,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.86395, y: -1.7876999, z: 0}
-    m_Extent: {x: 0.80775, y: 4.071, z: 0}
+    m_Center: {x: 0.8685, y: -1.7797499, z: 0}
+    m_Extent: {x: 0.8019, y: 4.06705, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3538,11 +3538,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7435741465144728059, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
       propertyPath: m_Color.b
-      value: 0.8
+      value: 0.5449448
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435741465144728059, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
+      propertyPath: m_Color.g
+      value: 0.735849
       objectReference: {fileID: 0}
     - target: {fileID: 7435741465144728059, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
       propertyPath: m_Color.r
-      value: 0.956295
+      value: 0.6946736
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
