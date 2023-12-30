@@ -92,9 +92,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5168190db9e734db996df7e7d3e7c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPowerUpLight: {fileID: 0}
   SlowTimePowerUpUseTime: 3
   SlowMotionValue: 0.3
   maxUses: 2
-  initialColor: {r: 0.066278934, g: 1, b: 0, a: 1}
-  usingColor: {r: 1, g: 0.510552, b: 0, a: 1}
-  doneColor: {r: 1, g: 0, b: 0, a: 1}
+  initialColor: {r: 1, g: 0.05179953, b: 0, a: 1}
+  usingColor: {r: 1, g: 0.050980393, b: 0, a: 0.54509807}
+  doneColor: {r: 1, g: 0.050980393, b: 0, a: 0}

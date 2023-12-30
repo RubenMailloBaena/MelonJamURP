@@ -500,8 +500,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15645, y: 0.15645003, z: 0}
-    m_Extent: {x: 1.10715, y: 2.35605, z: 0}
+    m_Center: {x: -0.16159996, y: 0.16175008, z: 0}
+    m_Extent: {x: 1.1082, y: 2.36165, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -687,8 +687,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.029650003, y: -0.0048499107, z: 0}
-    m_Extent: {x: 0.85905004, y: 2.46945, z: 0}
+    m_Center: {x: 0.033299983, y: 0.0047500134, z: 0}
+    m_Extent: {x: 0.8639, y: 2.47405, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1211,8 +1211,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.04065001, y: -0.069000006, z: 0}
-    m_Extent: {x: 0.91265, y: 2.5902, z: 0}
+    m_Center: {x: 0.037399977, y: -0.073549986, z: 0}
+    m_Extent: {x: 0.90569997, y: 2.58605, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1665,6 +1665,10 @@ PrefabInstance:
     - target: {fileID: 642665766180228497, guid: 4c53ac50bf26d6a4399e7b4b5639e2f9, type: 3}
       propertyPath: m_Name
       value: EndLevelPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 642665766180228497, guid: 4c53ac50bf26d6a4399e7b4b5639e2f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5294951672829587792, guid: 4c53ac50bf26d6a4399e7b4b5639e2f9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2448,15 +2452,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: initialColor.b
-      value: 0.15980244
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: initialColor.g
-      value: 1
+      value: 0.050980393
       objectReference: {fileID: 0}
     - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: initialColor.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: SlowMotionValue
