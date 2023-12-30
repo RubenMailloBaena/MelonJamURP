@@ -13,9 +13,15 @@ public class InstrumentLogic : MonoBehaviour
     [SerializeField]
     private Color smallColor;
 
+    private AudioSource src;
+    [SerializeField] AudioClip interactionSound;
+
     private void Start()
     {
         smallLight = GameObject.Find("FormLight").GetComponent<Light2D>();
+
+        src = gameObject.GetComponent<AudioSource>();
+        src.volume = 0.5f;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,10 +32,13 @@ public class InstrumentLogic : MonoBehaviour
         }
     }
 
-    public void ActivateLight()
+    public void InstrumentAction()
     {
         lightPrincipal.SetActive(true);
         gameObject.GetComponent<SpriteRenderer>().color=Color.white;
         smallLight.color = smallColor;
+
+        src.clip = interactionSound;
+        src.Play();
     }
 }
