@@ -114,6 +114,7 @@ public class PowerUpsLogic : MonoBehaviour
 
     private void SetTrue() {
         touchingWall = true;
+        playerPowerUpLight.SetActive(false);
     }
 
     private void SetFalse()

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1131535147967501278}
   - component: {fileID: 8522519084596583504}
+  - component: {fileID: -2637393198405717590}
   - component: {fileID: 3165894433683952822}
   - component: {fileID: 8499048855335075062}
   - component: {fileID: 621893225865014665}
@@ -49,6 +50,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevaEscena: ArtePrueba
   tiempoDeEspera: 5
+--- !u!114 &-2637393198405717590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736104413476358870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab7194bf116fc640995d62788d6c677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3165894433683952822
 MonoBehaviour:
   m_ObjectHideFlags: 0
