@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isIntroduction: 1
-  nuevaEscena: Level_1
+  nuevaEscena: Initial_Menu
   tiempoDeEspera: 0
 --- !u!1 &338822371
 GameObject:
