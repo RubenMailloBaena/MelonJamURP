@@ -31,6 +31,9 @@ public class GameController : MonoBehaviour
     [Header("Instruments")]
     [SerializeField] private List<GameObject> levelInstruments;
     [SerializeField] private List<GameObject> intrumentsUIObjects;
+    [SerializeField] private float audioSoundLevel = 0.5f;
+    [SerializeField] private List<AudioClip> intralevelMusic;
+    private AudioSource src;
 
     private TextMeshProUGUI jumpsLeftText;
     private TextMeshProUGUI timerText;
@@ -40,6 +43,10 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        src = gameObject.GetComponent<AudioSource>();
+        src.volume = audioSoundLevel;
+        src.loop = true;
+
         stopTimer = false;
 
         jumpsLeftText = GameObject.Find("Shots remaining").GetComponent<TextMeshProUGUI>();
@@ -82,6 +89,8 @@ public class GameController : MonoBehaviour
                 levelInstruments[index].GetComponent<InstrumentLogic>().InstrumentAction();
                 Color instrumentColor = levelInstruments[index].GetComponent<InstrumentLogic>().intrumentUIColor;
                 intrumentsUIObjects[index].GetComponent<Image>().color = instrumentColor;
+                src.clip = intralevelMusic[index];
+                src.Play();
                 index++;
             }
         }

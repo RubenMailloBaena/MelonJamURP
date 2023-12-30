@@ -155,6 +155,12 @@ MonoBehaviour:
   - {fileID: 1043141361}
   - {fileID: 827310086}
   - {fileID: 1297222566}
+  audioSoundLevel: 0.5
+  intralevelMusic:
+  - {fileID: 8300000, guid: 9aaf5728e2cb57b489dc833d168e768e, type: 3}
+  - {fileID: 8300000, guid: 90026690722efe4448c274f498625313, type: 3}
+  - {fileID: 8300000, guid: abaf162f06aa162499eefc9a5fd24bcb, type: 3}
+  - {fileID: 8300000, guid: f86bf3846b8018c4592d78a1a859a441, type: 3}
 --- !u!1 &83473253 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5178505308039342221, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
@@ -502,8 +508,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15380004, y: 0.16415, z: 0}
-    m_Extent: {x: 1.103, y: 2.35035, z: 0}
+    m_Center: {x: -0.15194997, y: 0.16499996, z: 0}
+    m_Extent: {x: 1.11435, y: 2.3625, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -694,8 +700,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.035400003, y: 0.002350092, z: 0}
-    m_Extent: {x: 0.85459995, y: 2.47175, z: 0}
+    m_Center: {x: 0.035050005, y: 0.005249977, z: 0}
+    m_Extent: {x: 0.86195004, y: 2.47135, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1222,8 +1228,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.04525, y: -0.06484997, z: 0}
-    m_Extent: {x: 0.91005, y: 2.5915499, z: 0}
+    m_Center: {x: 0.046949983, y: -0.07349992, z: 0}
+    m_Extent: {x: 0.91345, y: 2.5932, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

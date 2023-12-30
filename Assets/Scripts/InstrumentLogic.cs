@@ -15,6 +15,7 @@ public class InstrumentLogic : MonoBehaviour
 
     private AudioSource src;
     [SerializeField] AudioClip interactionSound;
+    [SerializeField] private float clipVolume = 0.5f;
     private bool interactionDone;
 
     private void Start()
@@ -22,7 +23,7 @@ public class InstrumentLogic : MonoBehaviour
         smallLight = GameObject.Find("FormLight").GetComponent<Light2D>();
 
         src = gameObject.GetComponent<AudioSource>();
-        src.volume = 0.5f;
+        src.volume = clipVolume;
 
         interactionDone = false;
     }
