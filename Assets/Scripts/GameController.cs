@@ -32,6 +32,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private List<GameObject> levelInstruments;
     [SerializeField] private List<GameObject> intrumentsUIObjects;
     [SerializeField] private float audioSoundLevel = 0.5f;
+    [SerializeField] private float fadeLength = 0.5f;
+
     [SerializeField] private List<AudioClip> intralevelMusic;
     private AudioSource src;
 
