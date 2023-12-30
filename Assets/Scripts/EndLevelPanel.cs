@@ -17,6 +17,7 @@ public class EndLevelPanel : MonoBehaviour
     [SerializeField] private AudioClip VictorySound;
     [SerializeField] private AudioClip LostSound;
     private AudioSource src;
+    private bool audioPlayed = false;
 
     private void Awake()
     {
@@ -42,7 +43,10 @@ public class EndLevelPanel : MonoBehaviour
             src.clip = LostSound;
         }
         Debug.Log("SOUND");
-        src.Play();
+        if (!audioPlayed) {
+            src.Play();
+            audioPlayed = true;
+        }
     }
 
     public void RepeatLevel()
