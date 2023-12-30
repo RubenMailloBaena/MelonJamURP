@@ -32,7 +32,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private List<GameObject> levelInstruments;
     [SerializeField] private List<GameObject> intrumentsUIObjects;
     [SerializeField] private float audioSoundLevel = 0.5f;
-    [SerializeField] private float fadeLength = 0.5f;
+    
 
     [SerializeField] private List<AudioClip> intralevelMusic;
     private AudioSource src;
@@ -110,11 +110,11 @@ public class GameController : MonoBehaviour
             stopTimer = true;
 
             yield return new WaitForSeconds(timeToEndPanel);
+            src.Stop();
+
 
             UI.GetComponentInChildren<Canvas>().enabled = false;
             EndLevelPanel.GetComponent<EndLevelPanel>().showPanel(nextLevelName, timerText, initialJumps - totalJumps, true);
-
-            
         }
     }
 
@@ -123,7 +123,9 @@ public class GameController : MonoBehaviour
             levelWon?.Invoke();
             stopTimer = true;
 
-            yield return new WaitForSeconds(timeToEndPanel);
+            yield return new WaitForSeconds(0f);
+
+            src.Stop();
 
             UI.GetComponentInChildren<Canvas>().enabled = false;
             EndLevelPanel.GetComponent<EndLevelPanel>().showPanel(nextLevelName, timerText, initialJumps - totalJumps, false);
