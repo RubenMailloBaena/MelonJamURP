@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour
     public static Action levelWon;
     private GameObject UI;
     private bool stopTimer = false;
+    [SerializeField] private float timeToEndPanel = 1.5f;
 
     //Atributos para controlar las caracteristicas del nivel
     [Header("Caracteristicas del nivel")]
@@ -55,8 +56,9 @@ public class GameController : MonoBehaviour
     {
         if(!stopTimer)
             Timer();
-        WinAction();
+        WinActionFunction();
     }
+    
     
     //TIMER DE LA UI
     private void Timer() 
@@ -86,27 +88,39 @@ public class GameController : MonoBehaviour
         catch (Exception e) {}
     }
 
-    private void WinAction() //CAMBIAR DE ESCENA
+    private void WinActionFunction() {
+        StartCoroutine(WinAction());
+    }
+
+    IEnumerator WinAction() //CAMBIAR DE ESCENA
     {
         if (index == levelInstruments.Count) {
             levelWon?.Invoke();
             stopTimer = true;
 
-            UI.GetComponentInChildren<Canvas>().enabled = false;
+            yield return new WaitForSeconds(timeToEndPanel);
 
+            UI.GetComponentInChildren<Canvas>().enabled = false;
             EndLevelPanel.GetComponent<EndLevelPanel>().showPanel(nextLevelName, timerText, initialJumps - totalJumps, true);
+
+            
         }
     }
 
-    private void LossAction() {
+    IEnumerator LossAction() {
         if (totalJumps <= 0 && index < levelInstruments.Count) {
             levelWon?.Invoke();
             stopTimer = true;
 
-            UI.GetComponentInChildren<Canvas>().enabled = false;
+            yield return new WaitForSeconds(timeToEndPanel);
 
+            UI.GetComponentInChildren<Canvas>().enabled = false;
             EndLevelPanel.GetComponent<EndLevelPanel>().showPanel(nextLevelName, timerText, initialJumps - totalJumps, false);
         }
+    }
+
+    private void LoosActionFunction() {
+        StartCoroutine(LossAction());
     }
 
 
@@ -131,7 +145,7 @@ public class GameController : MonoBehaviour
     {
         InstrumentLogic.onInstrument += checkIfCorrectInstrument;
         BallMovement.onJump += UpdateUIText;
-        BallMovement.onWall += LossAction;
+        BallMovement.onWall += LoosActionFunction;
         BallMovement.onElectricity += UpdateUITextFromElectricity;
     }
 
@@ -139,7 +153,7 @@ public class GameController : MonoBehaviour
     {
         InstrumentLogic.onInstrument -= checkIfCorrectInstrument;
         BallMovement.onJump -= UpdateUIText;
-        BallMovement.onWall -= LossAction;
+        BallMovement.onWall -= LoosActionFunction;
         BallMovement.onElectricity -= UpdateUITextFromElectricity;
     }
 }

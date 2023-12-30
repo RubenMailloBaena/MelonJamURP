@@ -189,8 +189,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.07049999, y: -1.3705, z: 0}
-    m_Extent: {x: 0.84029996, y: 2.0556, z: 0}
+    m_Center: {x: 0.06654999, y: -1.3661, z: 0}
+    m_Extent: {x: 0.83134997, y: 2.0513, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5236,8 +5236,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.11399999, y: -1.2607, z: 0}
-    m_Extent: {x: 0.90970004, y: 1.5589001, z: 0}
+    m_Center: {x: 0.11649999, y: -1.2594, z: 0}
+    m_Extent: {x: 0.9072, y: 1.5584, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5367,7 +5367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 477.58, y: -895.02}
+  m_AnchoredPosition: {x: 477.58, y: -895.56}
   m_SizeDelta: {x: 92.3234, y: 92.3234}
   m_Pivot: {x: 0.5, y: 1.9002981}
 --- !u!114 &315716672
@@ -5390,7 +5390,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c38b01eb1bece5540baed336ab9bd5e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd979c4cd6114834997fdada12f636e2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5416,9 +5416,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 261927801794698179, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 78db350e2e774ad46bbcb22d23d57b5f, type: 3}
+    - target: {fileID: 535549159164651316, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92495c7de7774244990339f6d24e4f10, type: 3}
+    - target: {fileID: 1303788919750849172, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 838
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303788919750849172, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -898.24
+      objectReference: {fileID: 0}
     - target: {fileID: 5897834959593532246, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318110562164020377, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 59.4279
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318110562164020377, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 315
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318110562164020377, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1023.3
       objectReference: {fileID: 0}
     - target: {fileID: 6683550235897137829, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5565,8 +5593,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.109049976, y: -1.26465, z: 0}
-    m_Extent: {x: 0.90515, y: 1.55465, z: 0}
+    m_Center: {x: 0.114549994, y: -1.2629001, z: 0}
+    m_Extent: {x: 0.90035, y: 1.556, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5964,7 +5992,7 @@ PrefabInstance:
     - target: {fileID: 7084425103105204063, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6c6965c63fbd91f42b408f0c789bd032, type: 3}
+      objectReference: {fileID: 21300000, guid: d8fb1361c10282f489d4ea7c296bb97e, type: 3}
     - target: {fileID: 7084425103105204063, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -5979,7 +6007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.13144194
+      value: 0.15427339
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalScale.y
@@ -5987,11 +6015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.34
+      value: -6.574
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.06
+      value: -0.042
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5999,7 +6027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9435594
+      value: -0.9999936
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6011,7 +6039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.33120346
+      value: 0.0035656067
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6023,7 +6051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -38.684
+      value: -0.409
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6586,7 +6614,7 @@ PrefabInstance:
     - target: {fileID: 7084425103105204063, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c38b01eb1bece5540baed336ab9bd5e5, type: 3}
+      objectReference: {fileID: 21300000, guid: c36d61bddd0d15c48bcee23cceecc9ad, type: 3}
     - target: {fileID: 7084425103105204063, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -6609,11 +6637,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.0029
+      value: 6.093
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.01
+      value: 2.055
       objectReference: {fileID: 0}
     - target: {fileID: 8795979099423006136, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6723,8 +6751,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.2626, y: -1.42345, z: 0}
-    m_Extent: {x: 1.9635, y: 0.92265004, z: 0}
+    m_Center: {x: -0.27540004, y: -1.4221001, z: 0}
+    m_Extent: {x: 1.9629, y: 0.92730004, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6805,8 +6833,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.06694999, y: -1.3695, z: 0}
-    m_Extent: {x: 0.83245003, y: 2.0573, z: 0}
+    m_Center: {x: 0.06939998, y: -1.3722, z: 0}
+    m_Extent: {x: 0.8404, y: 2.0498, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7128,7 +7156,7 @@ PrefabInstance:
     - target: {fileID: 7084425103105204063, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0cb3e80dc82921a4ab329c912958207c, type: 3}
+      objectReference: {fileID: 21300000, guid: 3494c6cbebd2d5049b6576b18f3ab6a9, type: 3}
     - target: {fileID: 7084425103105204063, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -7994,8 +8022,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 40.136}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 668, y: -1032}
-  m_SizeDelta: {x: 25.6951, y: 41.0452}
+  m_AnchoredPosition: {x: 655.9, y: -1021.6}
+  m_SizeDelta: {x: 63.0073, y: 41.0452}
   m_Pivot: {x: 0.49999982, y: 0.49999994}
 --- !u!114 &1739978760
 MonoBehaviour:
@@ -8017,7 +8045,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0015ca5aa4cd2bb4e929bb2cbf171453, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78db350e2e774ad46bbcb22d23d57b5f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8183,8 +8211,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.02849999, y: -1.4777, z: 0}
-    m_Extent: {x: 1.0261, y: 2.474, z: 0}
+    m_Center: {x: 0.028450012, y: -1.47385, z: 0}
+    m_Extent: {x: 1.02255, y: 2.48205, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
