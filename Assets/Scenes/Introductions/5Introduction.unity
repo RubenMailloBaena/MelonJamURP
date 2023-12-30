@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isIntroduction: 1
-  nuevaEscena: Level_2
+  nuevaEscena: Conditions
   tiempoDeEspera: 0
 --- !u!1 &383971278
 GameObject:

@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Introductions/5Introduction.unity
     guid: ac59187303eb57543b096e1dce0c27b3
   - enabled: 1
+    path: Assets/Scenes/Introductions/Conditions.unity
+    guid: 552753539771da74f9ad20cceedbcf27
+  - enabled: 1
     path: Assets/Scenes/Introductions/6Introduction.unity
     guid: 286c19021cbb3cf4e9ee289c4f804442
   - enabled: 1
