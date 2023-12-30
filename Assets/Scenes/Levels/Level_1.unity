@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndLevelPanel: {fileID: 870993158}
-  timeToEndPanel: 1
+  timeToEndPanel: 1.5
   levelCondition: 0
   totalJumps: 15
   nextLevelName: 4Introduction
@@ -502,8 +502,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15085, y: 0.1575501, z: 0}
-    m_Extent: {x: 1.10115, y: 2.35375, z: 0}
+    m_Center: {x: -0.15380004, y: 0.16415, z: 0}
+    m_Extent: {x: 1.103, y: 2.35035, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -694,8 +694,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0291, y: 0.010400057, z: 0}
-    m_Extent: {x: 0.8606, y: 2.4721, z: 0}
+    m_Center: {x: 0.035400003, y: 0.002350092, z: 0}
+    m_Extent: {x: 0.85459995, y: 2.47175, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1222,8 +1222,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.041450024, y: -0.06985009, z: 0}
-    m_Extent: {x: 0.90915, y: 2.58785, z: 0}
+    m_Center: {x: 0.04525, y: -0.06484997, z: 0}
+    m_Extent: {x: 0.91005, y: 2.5915499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

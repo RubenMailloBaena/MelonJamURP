@@ -189,8 +189,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.4365, y: 0.020999998, z: 0}
-    m_Extent: {x: 1.4579, y: 0.78419995, z: 0}
+    m_Center: {x: 0.43909997, y: 0.021899998, z: 0}
+    m_Extent: {x: 1.4486, y: 0.7909, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -835,6 +835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndLevelPanel: {fileID: 1958474421}
+  timeToEndPanel: 1.5
   levelCondition: 0
   totalJumps: 20
   nextLevelName: Level_6
@@ -912,8 +913,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.85165, y: -0.22080004, z: 0}
-    m_Extent: {x: 0.80315006, y: 2.4922, z: 0}
+    m_Center: {x: 0.84795, y: -0.21135008, z: 0}
+    m_Extent: {x: 0.81095004, y: 2.49165, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1070,6 +1071,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8143323640016754352, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 98b7c7b31ecbef241b566453ce6b9dd3, type: 3}
     - target: {fileID: -8143323640016754352, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: intrumentUIColor.b
       value: 1
@@ -1618,8 +1623,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.43825, y: 0.022700012, z: 0}
-    m_Extent: {x: 1.4549501, y: 0.7855, z: 0}
+    m_Center: {x: 0.43420005, y: 0.011099994, z: 0}
+    m_Extent: {x: 1.4469, y: 0.7884, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2069,6 +2074,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8143323640016754352, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9ef2973bd5b59724aba233255474d467, type: 3}
     - target: {fileID: 1430455526692181181, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -2713,8 +2722,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.9715501, y: 0.02364999, z: 0}
-    m_Extent: {x: 2.9671502, y: 0.84435, z: 0}
+    m_Center: {x: 1.9658499, y: 0.022650003, z: 0}
+    m_Extent: {x: 2.96945, y: 0.84255, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2992,8 +3001,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.867, y: -1.781, z: 0}
-    m_Extent: {x: 0.8053, y: 4.0652, z: 0}
+    m_Center: {x: 0.874, y: -1.7830501, z: 0}
+    m_Extent: {x: 0.8043, y: 4.07035, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3687,6 +3696,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8143323640016754352, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e35625bbe7fdbe04f89e6ed02afad54e, type: 3}
     - target: {fileID: 2433448545357266706, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: m_Color.b
       value: 0.5176471

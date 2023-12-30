@@ -15,6 +15,7 @@ public class InstrumentLogic : MonoBehaviour
 
     private AudioSource src;
     [SerializeField] AudioClip interactionSound;
+    private bool interactionDone;
 
     private void Start()
     {
@@ -22,6 +23,8 @@ public class InstrumentLogic : MonoBehaviour
 
         src = gameObject.GetComponent<AudioSource>();
         src.volume = 0.5f;
+
+        interactionDone = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,7 +41,10 @@ public class InstrumentLogic : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().color=Color.white;
         smallLight.color = smallColor;
 
-        src.clip = interactionSound;
-        src.Play();
+        if (!interactionDone) {
+            src.clip = interactionSound;
+            src.Play();
+            interactionDone = true;
+        }
     }
 }
