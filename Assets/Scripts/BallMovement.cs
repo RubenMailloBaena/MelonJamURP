@@ -8,7 +8,8 @@ public class BallMovement : MonoBehaviour
     [Header("Atributes")]
     [SerializeField] public float ballSpeed = 5f;
     [HideInInspector] private float speedIncrementation = 0f;
-    private bool touchingWall = true, touchingMovingWall = false;
+    public bool touchingWall = true;
+    private bool touchingMovingWall = false;
     [HideInInspector] public Vector2 direction;
 
     [HideInInspector] public float YSpeed;
@@ -62,6 +63,7 @@ public class BallMovement : MonoBehaviour
         }
     }
 
+
     public void GetDirectionVector() {
         direction = arrowPoint.transform.position - transform.position;
     }
@@ -69,6 +71,16 @@ public class BallMovement : MonoBehaviour
     public void ChangeShowArrow(bool show) {
         arrowPoint.GetComponent<DirectionArrow>().setArrowLine(show);
     }
+
+    public void ChangeShowArrowChangeDirection(bool show)
+    {
+        arrowPoint.GetComponent<DirectionArrow>().setArrowLineChangeDirection(show);
+    }
+
+    public void ChangeTouchingWall(bool change) {
+        touchingWall = change;
+    }
+
 
     private void IncrementBallSpeed()
     {
@@ -111,4 +123,7 @@ public class BallMovement : MonoBehaviour
     {
         PlayerInputs.selectDirection -= GetNewDirection;
     }
+
+
+    public bool getTouchingWall() { return touchingWall; }
 }

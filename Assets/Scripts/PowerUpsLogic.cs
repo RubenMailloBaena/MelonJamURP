@@ -61,13 +61,15 @@ public class PowerUpsLogic : MonoBehaviour
     //CHANGE DIRECTION MID-AIR
     private void ChangeDirectionMidAir() {
         Debug.Log("Doing Action");
-        playerScript.ChangeShowArrow(true);
+        playerScript.ChangeShowArrowChangeDirection(true);
+        playerScript.ChangeTouchingWall(true);
     }
 
     private void StopChangeDirectionMidAir() {
         Debug.Log("Stoppinn Action");
         playerScript.GetDirectionVector();
-        playerScript.ChangeShowArrow(false);
+        playerScript.ChangeShowArrowChangeDirection(false);
+        playerScript.ChangeTouchingWall(false);
     }
 
 

@@ -114,8 +114,15 @@ public class DirectionArrow : MonoBehaviour
     public void setArrowLine(bool setActive) {
         spriteRenderer.enabled = setActive;
 
-        if (setActive)
+        if (setActive) {
+            
             SetArrowDirectionToCenter();
+        }
+    }
+
+    public void setArrowLineChangeDirection(bool setActive)
+    {
+        spriteRenderer.enabled = setActive;
     }
 
     public void IncrementArrowSpeed() {
