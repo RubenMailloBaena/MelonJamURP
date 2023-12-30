@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndLevelPanel: {fileID: 870993158}
-  timeToEndPanel: 2
+  timeToEndPanel: 4
   levelCondition: 0
   totalJumps: 15
   nextLevelName: 4Introduction
@@ -508,8 +508,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.14564997, y: 0.16465008, z: 0}
-    m_Extent: {x: 1.1061499, y: 2.35525, z: 0}
+    m_Center: {x: -0.14425, y: 0.16005003, z: 0}
+    m_Extent: {x: 1.10575, y: 2.35785, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -700,8 +700,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.030100018, y: -0.0015499592, z: 0}
-    m_Extent: {x: 0.8622, y: 2.47595, z: 0}
+    m_Center: {x: 0.032000005, y: 0.0067499876, z: 0}
+    m_Extent: {x: 0.8607, y: 2.47435, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1228,8 +1228,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.04949999, y: -0.06470001, z: 0}
-    m_Extent: {x: 0.9066, y: 2.5882, z: 0}
+    m_Center: {x: 0.047700018, y: -0.07515001, z: 0}
+    m_Extent: {x: 0.9132, y: 2.58865, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1578,6 +1578,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
+--- !u!1001 &367022273480814642
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4986807533951789941, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_Name
+      value: Confeti
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961406668385073858, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961406668385073858, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961406668385073858, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.895646
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961406668385073858, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0017324097
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961406668385073858, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0017324097
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961406668385073858, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071047
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961406668385073858, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071047
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961406668385073858, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -270.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961406668385073858, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961406668385073858, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eb8ece7225d29c343aabf74791a7372c, type: 3}
 --- !u!1001 &1325647829847584016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2650,3 +2707,4 @@ SceneRoots:
   - {fileID: 365607893743339883}
   - {fileID: 1872251964}
   - {fileID: 1731043029269897006}
+  - {fileID: 367022273480814642}
