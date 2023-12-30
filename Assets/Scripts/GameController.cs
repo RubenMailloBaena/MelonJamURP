@@ -16,11 +16,14 @@ public class GameController : MonoBehaviour
     }
 
     public GameObject EndLevelPanel;
+    public static Action levelWon;
+    private GameObject UI;
 
     //Atributos para controlar las caracteristicas del nivel
     [Header("Caracteristicas del nivel")]
     [SerializeField] private LevelConditions levelCondition;
     [SerializeField] public int totalJumps = 20;
+    private int initialJumps;
     [SerializeField] private String nextLevelName = "Level_2"; 
 
     [Header("Instruments")]
@@ -32,6 +35,7 @@ public class GameController : MonoBehaviour
     private float startTime;
     private int index = 0;
 
+
     private void Start()
     {
         jumpsLeftText = GameObject.Find("Shots remaining").GetComponent<TextMeshProUGUI>();
@@ -39,6 +43,9 @@ public class GameController : MonoBehaviour
 
         timerText = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
         startTime = Time.time;
+
+        initialJumps = totalJumps;
+        UI = GameObject.Find("UI");
     }
 
     private void Update()
@@ -78,15 +85,21 @@ public class GameController : MonoBehaviour
     private void WinAction() //CAMBIAR DE ESCENA
     {
         if (index == levelInstruments.Count) {
-            //this.gameObject.GetComponent<SceneChanger>().CambiarEscena(nextLevelName);
-            Time.timeScale = 0;
-            EndLevelPanel.GetComponent<EndLevelPanel>().showPanel();
+            levelWon?.Invoke();
+
+            UI.GetComponentInChildren<Canvas>().enabled = false;
+
+            EndLevelPanel.GetComponent<EndLevelPanel>().showPanel(nextLevelName, timerText, initialJumps - totalJumps, true);
         }
     }
 
     private void LossAction() {
         if (totalJumps <= 0 && index < levelInstruments.Count) {
-            Debug.Log("Lossing");
+            levelWon?.Invoke();
+
+            UI.GetComponentInChildren<Canvas>().enabled = false;
+
+            EndLevelPanel.GetComponent<EndLevelPanel>().showPanel(nextLevelName, timerText, initialJumps - totalJumps, false);
         }
     }
 

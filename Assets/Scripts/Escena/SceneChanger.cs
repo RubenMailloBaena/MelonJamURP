@@ -27,6 +27,10 @@ public class SceneChanger : MonoBehaviour
             SceneManager.LoadScene(newScene);
     }
 
+    public void RepeatLevel() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     
     public void Exit()
     {

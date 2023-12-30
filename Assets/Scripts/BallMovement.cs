@@ -27,6 +27,8 @@ public class BallMovement : MonoBehaviour
     public Color SlowTimeColor;
     public Color ChangeDirectionColor;
 
+    private bool levelWon = false;
+
 
 
     void FixedUpdate()
@@ -38,7 +40,7 @@ public class BallMovement : MonoBehaviour
     //Movimiento de la pelota
     private void Movement()
     {
-        if (!touchingWall)
+        if (!touchingWall && !levelWon)
         {
             transform.position += new Vector3(direction.x * (XSpeed * Time.deltaTime), direction.y * (YSpeed * Time.deltaTime), 0f);
         }
@@ -123,13 +125,20 @@ public class BallMovement : MonoBehaviour
     private void OnEnable()
     {
         PlayerInputs.selectDirection += GetNewDirection;
+        GameController.levelWon += SetLevelWon;
     }
 
     private void OnDisable()
     {
         PlayerInputs.selectDirection -= GetNewDirection;
+        GameController.levelWon -= SetLevelWon;
     }
 
 
     public bool getTouchingWall() { return touchingWall; }
+
+    private void SetLevelWon()
+    {
+        levelWon = true;
+    }
 }
