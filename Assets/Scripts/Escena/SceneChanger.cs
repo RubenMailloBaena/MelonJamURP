@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     [SerializeField]
+    private bool isIntroduction = false;
+    [SerializeField]
     private string nuevaEscena;
     [SerializeField]
     private float tiempoDeEspera;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) && isIntroduction)
         {
             CambiarEscena(nuevaEscena);
         }

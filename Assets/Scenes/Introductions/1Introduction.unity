@@ -2525,6 +2525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1903e6477b54c44995f4b80281a5020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIntroduction: 1
   nuevaEscena: 2Introduction
   tiempoDeEspera: 0
 --- !u!1001 &5931159120556166404

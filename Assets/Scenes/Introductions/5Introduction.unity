@@ -348,7 +348,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -100
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: eb16f7a6d14bd9f46b9ddb44df9841d9, type: 3}
   m_Color: {r: 0.9137255, g: 0.8862745, b: 0.4, a: 1}
   m_FlipX: 0
@@ -456,6 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1903e6477b54c44995f4b80281a5020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIntroduction: 1
   nuevaEscena: Level_2
   tiempoDeEspera: 0
 --- !u!1 &383971278
@@ -885,6 +886,10 @@ PrefabInstance:
     - target: {fileID: 5294429768011074179, guid: d08d577909e8a9147b2ab6f9a281911d, type: 3}
       propertyPath: m_Name
       value: Canvas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294429768011074179, guid: d08d577909e8a9147b2ab6f9a281911d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1850,7 +1855,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -100
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: eb16f7a6d14bd9f46b9ddb44df9841d9, type: 3}
   m_Color: {r: 0.9137255, g: 0.8862745, b: 0.4, a: 1}
   m_FlipX: 0
@@ -2522,7 +2527,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 6807d1f480c74224183cf78f69fd2798, type: 3}
   m_Color: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
   m_FlipX: 0
@@ -2947,6 +2952,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 3795265471876462630, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6015977323794436434, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.126245
@@ -3149,7 +3158,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 6807d1f480c74224183cf78f69fd2798, type: 3}
   m_Color: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
   m_FlipX: 0

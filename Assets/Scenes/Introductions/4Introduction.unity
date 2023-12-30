@@ -742,7 +742,6 @@ GameObject:
   - component: {fileID: 190560489}
   - component: {fileID: 190560488}
   - component: {fileID: 190560491}
-  - component: {fileID: 190560492}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -812,21 +811,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1903e6477b54c44995f4b80281a5020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIntroduction: 1
   nuevaEscena: 5Introduction
-  tiempoDeEspera: 0
---- !u!114 &190560492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190560487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1903e6477b54c44995f4b80281a5020, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nuevaEscena: 
   tiempoDeEspera: 0
 --- !u!1 &349520299
 GameObject:
@@ -2205,6 +2191,10 @@ PrefabInstance:
     - target: {fileID: 1990497975914894193, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
       propertyPath: m_Name
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795265471876462630, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6015977323794436434, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
       propertyPath: m_LocalScale.x

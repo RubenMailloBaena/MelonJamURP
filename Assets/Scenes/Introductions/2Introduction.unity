@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 3795265471876462630, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6015977323794436434, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.231637
@@ -1028,6 +1032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1903e6477b54c44995f4b80281a5020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIntroduction: 1
   nuevaEscena: 3Indtroduction
   tiempoDeEspera: 0
 --- !u!1 &727486254
