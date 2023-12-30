@@ -15,10 +15,11 @@ public class PowerUpsLogic : MonoBehaviour
 
 
     [Header("Change Direction Mid-Air")]
+    [SerializeField] private int maxUses = 2;
     [SerializeField] private Color initialColor;
     [SerializeField] private Color usingColor;
     [SerializeField] private Color doneColor;
-    private bool directionChanged;
+    private bool directionChanged, touchingWall = true;
     private Image changeDirectionIcon;
 
 
@@ -70,7 +71,7 @@ public class PowerUpsLogic : MonoBehaviour
 
     //CHANGE DIRECTION MID-AIR
     private void ChangeDirectionMidAir() {
-        if (!directionChanged) {
+        if (!directionChanged && !touchingWall) {
             changeDirectionIcon.color = usingColor;
             playerScript.ChangeShowArrowChangeDirection(true);
             playerScript.ChangeTouchingWall(true);
@@ -78,14 +79,34 @@ public class PowerUpsLogic : MonoBehaviour
     }
 
     private void StopChangeDirectionMidAir() {
-        if (!directionChanged) {
-            changeDirectionIcon.color = doneColor;
+        if (!directionChanged && !touchingWall) {
             playerScript.GetDirectionVector();
             playerScript.ChangeShowArrowChangeDirection(false);
             playerScript.ChangeTouchingWall(false);
-            directionChanged = true;
+            PowerUpUsed();
         }
-        
+    }
+
+    private void PowerUpUsed() {
+        maxUses--;
+        if (maxUses == 0)
+        {
+            directionChanged = true;
+            changeDirectionIcon.color = doneColor;
+        }
+        else 
+        {
+            changeDirectionIcon.color = initialColor;
+        }
+    }
+
+    private void SetTrue() {
+        touchingWall = true;
+    }
+
+    private void SetFalse()
+    {
+        touchingWall = false;
     }
 
 
@@ -97,6 +118,8 @@ public class PowerUpsLogic : MonoBehaviour
         PlayerInputs.stopSlowTime += StopSlowTime;
         PlayerInputs.changeDirection += ChangeDirectionMidAir;
         PlayerInputs.stopChangeDirection += StopChangeDirectionMidAir;
+        PlayerInputs.selectDirection += SetFalse;
+        BallMovement.onWall += SetTrue;
     }
 
     private void OnDisable()
@@ -105,5 +128,7 @@ public class PowerUpsLogic : MonoBehaviour
         PlayerInputs.stopSlowTime -= StopSlowTime;
         PlayerInputs.changeDirection -= ChangeDirectionMidAir;
         PlayerInputs.stopChangeDirection -= StopChangeDirectionMidAir;
+        PlayerInputs.selectDirection -= SetFalse;
+        BallMovement.onWall -= SetTrue;
     }
 }
