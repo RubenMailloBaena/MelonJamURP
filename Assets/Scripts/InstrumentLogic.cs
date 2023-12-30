@@ -24,13 +24,12 @@ public class InstrumentLogic : MonoBehaviour
         if (collision.gameObject.tag.Equals("Player")) {
             Debug.Log("Instrument Collected");
             onInstrument?.Invoke(this.gameObject);
-            ActivateLight();
         }
     }
 
-    private void ActivateLight()
+    public void ActivateLight()
     {
-        lightPrincipal.active = true;
+        lightPrincipal.SetActive(true);
         gameObject.GetComponent<SpriteRenderer>().color=Color.white;
         smallLight.color = smallColor;
     }

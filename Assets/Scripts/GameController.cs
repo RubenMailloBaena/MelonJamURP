@@ -64,7 +64,7 @@ public class GameController : MonoBehaviour
         {
             if (instrument == levelInstruments[index])
             {
-                Debug.Log("Got Next One");
+                levelInstruments[index].GetComponent<InstrumentLogic>().ActivateLight();
                 Color instrumentColor = levelInstruments[index].GetComponent<InstrumentLogic>().intrumentUIColor;
                 intrumentsUIObjects[index].GetComponent<Image>().color = instrumentColor;
                 index++;
