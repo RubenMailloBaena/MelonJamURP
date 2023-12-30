@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour
         Electricity,
     }
 
+    public GameObject EndLevelPanel;
+
     //Atributos para controlar las caracteristicas del nivel
     [Header("Caracteristicas del nivel")]
     [SerializeField] private LevelConditions levelCondition;
@@ -24,8 +26,6 @@ public class GameController : MonoBehaviour
     [Header("Instruments")]
     [SerializeField] private List<GameObject> levelInstruments;
     [SerializeField] private List<GameObject> intrumentsUIObjects;
-
-    //
 
     private TextMeshProUGUI jumpsLeftText;
     private TextMeshProUGUI timerText;
@@ -78,7 +78,9 @@ public class GameController : MonoBehaviour
     private void WinAction() //CAMBIAR DE ESCENA
     {
         if (index == levelInstruments.Count) {
-            this.gameObject.GetComponent<SceneChanger>().CambiarEscena(nextLevelName);
+            //this.gameObject.GetComponent<SceneChanger>().CambiarEscena(nextLevelName);
+            Time.timeScale = 0;
+            EndLevelPanel.GetComponent<EndLevelPanel>().showPanel();
         }
     }
 

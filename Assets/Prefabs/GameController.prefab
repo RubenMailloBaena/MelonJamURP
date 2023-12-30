@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1131535147967501278}
   - component: {fileID: 8522519084596583504}
-  - component: {fileID: -2637393198405717590}
   - component: {fileID: 3165894433683952822}
   - component: {fileID: 8499048855335075062}
   - component: {fileID: 621893225865014665}
@@ -48,20 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1903e6477b54c44995f4b80281a5020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIntroduction: 0
   nuevaEscena: ArtePrueba
   tiempoDeEspera: 5
---- !u!114 &-2637393198405717590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736104413476358870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aab7194bf116fc640995d62788d6c677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3165894433683952822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5168190db9e734db996df7e7d3e7c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPowerUpLight: {fileID: 0}
+  playerPowerUpLight: {fileID: 642665766180228497, guid: 4c53ac50bf26d6a4399e7b4b5639e2f9, type: 3}
   SlowTimePowerUpUseTime: 3
   SlowMotionValue: 0.3
   maxUses: 2

@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0650fb3cdbe354aaf89ce9c0433bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EndLevelPanel: {fileID: 870993158}
   levelCondition: 0
   totalJumps: 10
   nextLevelName: 4Introduction
@@ -500,8 +501,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15465003, y: 0.16285002, z: 0}
-    m_Extent: {x: 1.11355, y: 2.3569498, z: 0}
+    m_Center: {x: -0.14855, y: 0.15990007, z: 0}
+    m_Extent: {x: 1.10375, y: 2.3625998, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -601,6 +602,11 @@ PrefabInstance:
       addedObject: {fileID: 1301489691}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9dadcaad382664498b17d26f3356f2c, type: 3}
+--- !u!1 &870993158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 642665766180228497, guid: 4c53ac50bf26d6a4399e7b4b5639e2f9, type: 3}
+  m_PrefabInstance: {fileID: 1731043029269897006}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1020508489 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7691708257258806557, guid: a9dadcaad382664498b17d26f3356f2c, type: 3}
@@ -687,8 +693,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.034800023, y: 0.0077500343, z: 0}
-    m_Extent: {x: 0.8572, y: 2.47065, z: 0}
+    m_Center: {x: 0.037149996, y: -0.004900098, z: 0}
+    m_Extent: {x: 0.86225, y: 2.4689999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1211,8 +1217,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.045650005, y: -0.07150006, z: 0}
-    m_Extent: {x: 0.90995, y: 2.5929, z: 0}
+    m_Center: {x: 0.042300016, y: -0.069350004, z: 0}
+    m_Extent: {x: 0.91040003, y: 2.59265, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1668,7 +1674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 642665766180228497, guid: 4c53ac50bf26d6a4399e7b4b5639e2f9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5294951672829587792, guid: 4c53ac50bf26d6a4399e7b4b5639e2f9, type: 3}
       propertyPath: m_LocalPosition.x
