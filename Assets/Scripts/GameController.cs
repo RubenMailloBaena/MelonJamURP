@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour
     public GameObject EndLevelPanel;
     public static Action levelWon;
     private GameObject UI;
+    private bool stopTimer = false;
 
     //Atributos para controlar las caracteristicas del nivel
     [Header("Caracteristicas del nivel")]
@@ -38,6 +39,8 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        stopTimer = false;
+
         jumpsLeftText = GameObject.Find("Shots remaining").GetComponent<TextMeshProUGUI>();
         jumpsLeftText.text = totalJumps.ToString();
 
@@ -50,7 +53,8 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        Timer();
+        if(!stopTimer)
+            Timer();
         WinAction();
     }
     
@@ -86,6 +90,7 @@ public class GameController : MonoBehaviour
     {
         if (index == levelInstruments.Count) {
             levelWon?.Invoke();
+            stopTimer = true;
 
             UI.GetComponentInChildren<Canvas>().enabled = false;
 
@@ -96,6 +101,7 @@ public class GameController : MonoBehaviour
     private void LossAction() {
         if (totalJumps <= 0 && index < levelInstruments.Count) {
             levelWon?.Invoke();
+            stopTimer = true;
 
             UI.GetComponentInChildren<Canvas>().enabled = false;
 
