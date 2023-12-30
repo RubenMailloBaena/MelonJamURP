@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndLevelPanel: {fileID: 870993158}
-  timeToEndPanel: 4.392
+  timeToEndPanel: 2
   levelCondition: 0
   totalJumps: 15
   nextLevelName: 4Introduction
@@ -156,8 +156,6 @@ MonoBehaviour:
   - {fileID: 827310086}
   - {fileID: 1297222566}
   audioSoundLevel: 0.5
-  VictorySound: {fileID: 8300000, guid: 17ca5cc7b51dc81469462d63829a6f22, type: 3}
-  LostSound: {fileID: 8300000, guid: 9ba125266d395104897224388db5b37c, type: 3}
   intralevelMusic:
   - {fileID: 8300000, guid: c28d0400e61b24b40ac1c29b4a5de7bf, type: 3}
   - {fileID: 8300000, guid: 940b4dc6c5c23cc4bbf447fa196fcdbb, type: 3}
@@ -510,8 +508,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.14925, y: 0.15680003, z: 0}
-    m_Extent: {x: 1.10925, y: 2.3592, z: 0}
+    m_Center: {x: -0.14564997, y: 0.16465008, z: 0}
+    m_Extent: {x: 1.1061499, y: 2.35525, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -702,8 +700,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.030550003, y: 0.010349989, z: 0}
-    m_Extent: {x: 0.86085, y: 2.47045, z: 0}
+    m_Center: {x: 0.030100018, y: -0.0015499592, z: 0}
+    m_Extent: {x: 0.8622, y: 2.47595, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1230,8 +1228,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.04455, y: -0.06484997, z: 0}
-    m_Extent: {x: 0.91455, y: 2.59195, z: 0}
+    m_Center: {x: 0.04949999, y: -0.06470001, z: 0}
+    m_Extent: {x: 0.9066, y: 2.5882, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
