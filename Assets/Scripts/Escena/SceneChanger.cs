@@ -10,10 +10,19 @@ public class SceneChanger : MonoBehaviour
     [SerializeField]
     private float tiempoDeEspera;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            CambiarEscena(nuevaEscena);
+        }
+    }
+
 
     public void CambiarEscena(string newScene)
     {
-        SceneManager.LoadScene(newScene);
+      
+            SceneManager.LoadScene(newScene);
     }
 
     public void Exit()
