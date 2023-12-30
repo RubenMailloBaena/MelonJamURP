@@ -489,8 +489,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15474996, y: 0.16149998, z: 0}
-    m_Extent: {x: 1.10065, y: 2.3596, z: 0}
+    m_Center: {x: -0.15155, y: 0.16364992, z: 0}
+    m_Extent: {x: 1.10835, y: 2.3582501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -671,8 +671,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.03215, y: 0.0010499954, z: 0}
-    m_Extent: {x: 0.86074996, y: 2.47345, z: 0}
+    m_Center: {x: 0.031199992, y: 0.0056500435, z: 0}
+    m_Extent: {x: 0.8581, y: 2.47055, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1195,8 +1195,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.04949999, y: -0.078150034, z: 0}
-    m_Extent: {x: 0.9049, y: 2.59125, z: 0}
+    m_Center: {x: 0.04885, y: -0.07424998, z: 0}
+    m_Extent: {x: 0.91145, y: 2.59425, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1279,7 +1279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2752056561080565806, guid: 118c15246a638bc4a992e852cf1b3e68, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8369274940024832586, guid: 118c15246a638bc4a992e852cf1b3e68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2366,8 +2366,12 @@ PrefabInstance:
       value: GameController
       objectReference: {fileID: 0}
     - target: {fileID: 3165894433683952822, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: slowTimeKey
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165894433683952822, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: changeDirectionMidAir
-      value: 120
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8499048855335075062, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: gravity
