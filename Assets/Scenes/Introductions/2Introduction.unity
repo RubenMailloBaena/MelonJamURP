@@ -2371,7 +2371,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The protagonist discovers the gift he possesses: the ability to create
+  m_text: 'Our protagonist discovers the gift he possesses: the ability to create
     enchanting music with every turn.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
