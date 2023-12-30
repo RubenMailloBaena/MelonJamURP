@@ -14,7 +14,12 @@ public class PowerUpsLogic : MonoBehaviour
     private Image SlowTimeBar;
 
 
-    //[Header("Change Direction Mid-Air")]
+    [Header("Change Direction Mid-Air")]
+    [SerializeField] private Color initialColor;
+    [SerializeField] private Color usingColor;
+    [SerializeField] private Color doneColor;
+    private bool directionChanged;
+    private Image changeDirectionIcon;
 
 
     private void Start()
@@ -24,6 +29,11 @@ public class PowerUpsLogic : MonoBehaviour
         //SLOW TIME
         SlowTimeBar = GameObject.Find("SlowTimeBar").GetComponent<Image>();
         timeToUse = SlowTimePowerUpUseTime;
+
+        //CHANGE DIRECTION
+        directionChanged = false;
+        changeDirectionIcon = GameObject.Find("ChangeDirectionIcon").GetComponent<Image>();
+        changeDirectionIcon.color = initialColor;
     }
 
     //SLOW TIME
@@ -60,16 +70,22 @@ public class PowerUpsLogic : MonoBehaviour
 
     //CHANGE DIRECTION MID-AIR
     private void ChangeDirectionMidAir() {
-        Debug.Log("Doing Action");
-        playerScript.ChangeShowArrowChangeDirection(true);
-        playerScript.ChangeTouchingWall(true);
+        if (!directionChanged) {
+            changeDirectionIcon.color = usingColor;
+            playerScript.ChangeShowArrowChangeDirection(true);
+            playerScript.ChangeTouchingWall(true);
+        }
     }
 
     private void StopChangeDirectionMidAir() {
-        Debug.Log("Stoppinn Action");
-        playerScript.GetDirectionVector();
-        playerScript.ChangeShowArrowChangeDirection(false);
-        playerScript.ChangeTouchingWall(false);
+        if (!directionChanged) {
+            changeDirectionIcon.color = doneColor;
+            playerScript.GetDirectionVector();
+            playerScript.ChangeShowArrowChangeDirection(false);
+            playerScript.ChangeTouchingWall(false);
+            directionChanged = true;
+        }
+        
     }
 
 

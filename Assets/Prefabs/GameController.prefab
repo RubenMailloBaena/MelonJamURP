@@ -94,3 +94,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SlowTimePowerUpUseTime: 3
   SlowMotionValue: 0.3
+  initialColor: {r: 0.066278934, g: 1, b: 0, a: 1}
+  usingColor: {r: 1, g: 0.510552, b: 0, a: 1}
+  doneColor: {r: 1, g: 0, b: 0, a: 1}

@@ -489,8 +489,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15030003, y: 0.16919994, z: 0}
-    m_Extent: {x: 1.1006, y: 2.3539, z: 0}
+    m_Center: {x: -0.15474996, y: 0.16149998, z: 0}
+    m_Extent: {x: 1.10065, y: 2.3596, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -671,8 +671,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.03215, y: 0.00395, z: 0}
-    m_Extent: {x: 0.85704994, y: 2.4731498, z: 0}
+    m_Center: {x: 0.03215, y: 0.0010499954, z: 0}
+    m_Extent: {x: 0.86074996, y: 2.47345, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1195,8 +1195,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.042349994, y: -0.07340002, z: 0}
-    m_Extent: {x: 0.91355, y: 2.5906, z: 0}
+    m_Center: {x: 0.04949999, y: -0.078150034, z: 0}
+    m_Extent: {x: 0.9049, y: 2.59125, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1279,7 +1279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2752056561080565806, guid: 118c15246a638bc4a992e852cf1b3e68, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8369274940024832586, guid: 118c15246a638bc4a992e852cf1b3e68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2270,8 +2270,48 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: DoneColor.a
+      value: 0.6156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: DoneColor.b
+      value: 0.06132078
+      objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: DoneColor.g
+      value: 0.06132078
+      objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: DoneColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: SlowTimeBar
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: UsingColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: UsingColor.g
+      value: 0.44817993
+      objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: UsingColor.r
+      value: 0.19339621
+      objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: initialColor.b
+      value: 0.15980244
+      objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: initialColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: initialColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: SlowMotionValue
