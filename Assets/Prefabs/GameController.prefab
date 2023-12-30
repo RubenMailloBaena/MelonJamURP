@@ -63,8 +63,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpKey: 32
-  slowTimeKey: 304
-  changeDirectionMidAir: 120
+  slowTimeKey: 323
+  changeDirectionMidAir: 324
 --- !u!114 &8499048855335075062
 MonoBehaviour:
   m_ObjectHideFlags: 0
