@@ -6372,8 +6372,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.195, y: -0.05945, z: 0}
-    m_Extent: {x: 3.2003, y: 0.79244995, z: 0}
+    m_Center: {x: 2.19295, y: -0.06674999, z: 0}
+    m_Extent: {x: 3.19935, y: 0.78475, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6813,6 +6813,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameController
       objectReference: {fileID: 0}
+    - target: {fileID: 3199026682340519190, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199026682340519190, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471882301903322725, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298668908050960007, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298668908050960007, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 6775454035333111600, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499048855335075062, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: LessJumps
       value: 1
@@ -6847,7 +6871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndLevelPanel: {fileID: 910668190}
-  timeToEndPanel: 2
+  timeToEndPanel: 3.27
   levelCondition: 4
   totalJumps: 26
   nextLevelName: 6Introduction
@@ -6863,6 +6887,19 @@ MonoBehaviour:
   - {fileID: 1857282502}
   - {fileID: 857459536}
   - {fileID: 1385697797}
+  audioSoundLevel: 0.5
+  confeti: {fileID: 1166357478}
+  intralevelMusic:
+  - {fileID: 8300000, guid: d5b449dc2e5de234883e88e43b1c2180, type: 3}
+  - {fileID: 8300000, guid: b13540f5e745b8a4aa288bde91e38cab, type: 3}
+  - {fileID: 8300000, guid: 2bd964ae6b248294695e855a76d563ef, type: 3}
+  - {fileID: 8300000, guid: f28e088037b5ba840a590bff59a0ac1f, type: 3}
+  - {fileID: 8300000, guid: 8d745fe97e4f55642bd1688ba43cee96, type: 3}
+--- !u!198 &1166357478 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3471882301903322725, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+  m_PrefabInstance: {fileID: 1166357475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1266051763
 GameObject:
   m_ObjectHideFlags: 0
@@ -6929,8 +6966,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.45205, y: -0.063250005, z: 0}
-    m_Extent: {x: 2.46245, y: 0.78775, z: 0}
+    m_Center: {x: 1.4562, y: -0.061049998, z: 0}
+    m_Extent: {x: 2.4664001, y: 0.78955, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7011,8 +7048,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.5306001, y: -0.06735, z: 0}
-    m_Extent: {x: 2.527, y: 0.81055, z: 0}
+    m_Center: {x: 1.5268999, y: -0.07065001, z: 0}
+    m_Extent: {x: 2.5316, y: 0.80684996, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7093,8 +7130,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 2.1967998, y: -0.056000024, z: 0}
-    m_Extent: {x: 3.197, y: 0.77820003, z: 0}
+    m_Center: {x: 2.1884, y: -0.054500014, z: 0}
+    m_Extent: {x: 3.1973002, y: 0.78499997, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

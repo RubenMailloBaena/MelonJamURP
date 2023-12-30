@@ -32,7 +32,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private List<GameObject> levelInstruments;
     [SerializeField] private List<GameObject> intrumentsUIObjects;
     [SerializeField] private float audioSoundLevel = 0.5f;
-    
+
+    public ParticleSystem confeti;
 
     [SerializeField] private List<AudioClip> intralevelMusic;
     private AudioSource src;
@@ -45,6 +46,9 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        confeti.Stop();
+        confeti.Clear();
+
         src = gameObject.GetComponent<AudioSource>();
         src.volume = audioSoundLevel;
         src.loop = true;
@@ -108,6 +112,7 @@ public class GameController : MonoBehaviour
         if (index == levelInstruments.Count) {
             levelWon?.Invoke();
             stopTimer = true;
+            confeti.Play();
 
             yield return new WaitForSeconds(timeToEndPanel);
             src.Stop();
