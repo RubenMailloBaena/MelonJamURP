@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering.Universal;
 
 public class PowerUpsLogic : MonoBehaviour
 {
     private BallMovement playerScript;
+    public GameObject playerPowerUpLight;
 
     [Header("Slow Time Power Up")]
     [SerializeField] private float SlowTimePowerUpUseTime = 5f;
@@ -45,11 +47,15 @@ public class PowerUpsLogic : MonoBehaviour
             Time.fixedDeltaTime = Time.timeScale * 0.02f;
 
             timeToUse -= Time.deltaTime;
+
+            playerPowerUpLight.GetComponent<Light2D>().color = playerScript.SlowTimeColor;
+            playerPowerUpLight.SetActive(true);
         }
         else 
         {
             Time.timeScale = 1f;
             Time.fixedDeltaTime = 0.02f;
+            playerPowerUpLight.SetActive(false);
         }
         SlowTimeBarUI();
     }
@@ -57,6 +63,7 @@ public class PowerUpsLogic : MonoBehaviour
     private void StopSlowTime() {
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
+        playerPowerUpLight.SetActive(false);
     }
 
     private void SlowTimeBarUI() {
@@ -75,6 +82,9 @@ public class PowerUpsLogic : MonoBehaviour
             changeDirectionIcon.color = usingColor;
             playerScript.ChangeShowArrowChangeDirection(true);
             playerScript.ChangeTouchingWall(true);
+
+            playerPowerUpLight.GetComponent<Light2D>().color = playerScript.ChangeDirectionColor;
+            playerPowerUpLight.SetActive(true);
         }
     }
 
@@ -84,6 +94,8 @@ public class PowerUpsLogic : MonoBehaviour
             playerScript.ChangeShowArrowChangeDirection(false);
             playerScript.ChangeTouchingWall(false);
             PowerUpUsed();
+
+            playerPowerUpLight.SetActive(false);
         }
     }
 

@@ -23,7 +23,11 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private GameObject arrowPoint; //Referencia a la flecha de direccion
     [SerializeField] private Rigidbody2D rb; //For velocity
 
-    
+    [Header("Power Up Lights")]
+    public Color SlowTimeColor;
+    public Color ChangeDirectionColor;
+
+
 
     void FixedUpdate()
     {

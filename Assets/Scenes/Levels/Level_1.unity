@@ -196,11 +196,17 @@ Transform:
   - {fileID: 1023086869}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &442788979 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3821540622405615369, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
+--- !u!114 &442788981 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1430455526692181181, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
   m_PrefabInstance: {fileID: 8795876901882451774}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &459883566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -494,8 +500,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.15395, y: 0.16550004, z: 0}
-    m_Extent: {x: 1.11125, y: 2.3551002, z: 0}
+    m_Center: {x: -0.15165001, y: 0.15769994, z: 0}
+    m_Extent: {x: 1.1122501, y: 2.3576999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -610,6 +616,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3293937038729019527, guid: 0a5b7dbe7d099aa4586bc7b428b61e10, type: 3}
   m_PrefabInstance: {fileID: 365607893743339883}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1043701788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1037603393918790947, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
+  m_PrefabInstance: {fileID: 1325647829847584016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1127639906
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,8 +687,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.03215, y: 0.0029500723, z: 0}
-    m_Extent: {x: 0.85805, y: 2.4749498, z: 0}
+    m_Center: {x: 0.039050013, y: 0.006900072, z: 0}
+    m_Extent: {x: 0.85605, y: 2.4714, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1200,8 +1211,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.043150008, y: -0.07159996, z: 0}
-    m_Extent: {x: 0.91275, y: 2.5927, z: 0}
+    m_Center: {x: 0.041199982, y: -0.06649995, z: 0}
+    m_Extent: {x: 0.9069, y: 2.5927, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1558,6 +1569,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 486811576500439170, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1990497975914894193, guid: 4a61e30990094874fbdf0715eee32636, type: 3}
       propertyPath: m_Name
       value: Ball
@@ -1808,7 +1823,7 @@ PrefabInstance:
     - target: {fileID: -8143323640016754352, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: smallLight
       value: 
-      objectReference: {fileID: 442788979}
+      objectReference: {fileID: 442788981}
     - target: {fileID: -8143323640016754352, guid: 6bf83a12a6ae17541bbcad99a23c0513, type: 3}
       propertyPath: smallColor.b
       value: 0.14978641
@@ -2390,6 +2405,10 @@ PrefabInstance:
       propertyPath: SlowMotionValue
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
+      propertyPath: playerPowerUpLight
+      value: 
+      objectReference: {fileID: 1043701788}
     - target: {fileID: 621893225865014665, guid: 7a006e32eb5434e4fa1fde338df0c96e, type: 3}
       propertyPath: SlowTimePowerUpUseTime
       value: 3
