@@ -66,6 +66,8 @@ public class BallMovement : MonoBehaviour
 
     public void GetDirectionVector() {
         direction = arrowPoint.transform.position - transform.position;
+        YSpeed = ballSpeed;
+        XSpeed = ballSpeed;
     }
 
     public void ChangeShowArrow(bool show) {

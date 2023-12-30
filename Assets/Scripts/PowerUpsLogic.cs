@@ -91,19 +91,6 @@ public class PowerUpsLogic : MonoBehaviour
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     private void OnEnable()
     {
         PlayerInputs.slowTime += SlowTime;

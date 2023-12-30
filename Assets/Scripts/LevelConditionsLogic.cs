@@ -17,7 +17,7 @@ public class LevelConditionsLogic : MonoBehaviour
     [SerializeField] private int LessJumps = 2;
 
 
-    private bool G = false, W = false, S = false, R = false;
+    private bool G = false, W = false, S = false, R = false, usingPowerUp = false;
 
     private GameController.LevelConditions levelCondition;
     private GameObject player;
@@ -63,7 +63,7 @@ public class LevelConditionsLogic : MonoBehaviour
     }
 
     private void Gravity(){
-        if (G && !touchingWall)
+        if (G && !touchingWall && !usingPowerUp)
         {
             player.GetComponent<BallMovement>().YSpeed -= (gravityScale * Time.deltaTime);
         }
@@ -77,7 +77,7 @@ public class LevelConditionsLogic : MonoBehaviour
 
     private void Windy()
     {
-        if (W && !touchingWall)
+        if (W && !touchingWall && !usingPowerUp)
         {
             player.GetComponent<BallMovement>().XSpeed -= (WindValue * Time.deltaTime);
         }
@@ -114,6 +114,8 @@ public class LevelConditionsLogic : MonoBehaviour
         PlayerInputs.selectDirection += SetFalse;
         BallMovement.onWall += SetTrue;
         BallMovement.onElectricity += Electricity;
+        PlayerInputs.changeDirection += SetTrue;
+        PlayerInputs.stopChangeDirection += SetFalse;
     }
 
     private void OnDisable()
@@ -121,5 +123,7 @@ public class LevelConditionsLogic : MonoBehaviour
         PlayerInputs.selectDirection -= SetFalse;
         BallMovement.onWall -= SetTrue;
         BallMovement.onElectricity -= Electricity;
+        PlayerInputs.changeDirection -= SetTrue;
+        PlayerInputs.stopChangeDirection -= SetFalse;
     }
 }

@@ -61,9 +61,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c41f59c19727c44b9b096584224c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpKey: 32
+  jumpKey: 323
   slowTimeKey: 304
-  changeDirectionMidAir: 99
+  changeDirectionMidAir: 32
 --- !u!114 &8499048855335075062
 MonoBehaviour:
   m_ObjectHideFlags: 0
