@@ -25,6 +25,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private List<GameObject> levelInstruments;
     [SerializeField] private List<GameObject> intrumentsUIObjects;
 
+    //
+
     private TextMeshProUGUI jumpsLeftText;
     private TextMeshProUGUI timerText;
     private float startTime;
